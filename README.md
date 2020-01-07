@@ -1,6 +1,18 @@
 # fbla-competition-coding-programming
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
+## Languages
+
+This tool is coded as a web application and uses the following programming and markup languages to function.
+
+### HTML
+
+### CSS
+
+### JavaScript
+
+### JSON
+
 ## Pages
 
  - Home (index.html)
