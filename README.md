@@ -1,6 +1,11 @@
 # fbla-competition-coding-programming
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
+## Pages
+
+ - Home (index.html)
+ - Login (login.html)
+
 ## Libraries
 
 Responsive web design framework by Google
