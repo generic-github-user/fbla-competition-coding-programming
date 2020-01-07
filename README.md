@@ -20,6 +20,7 @@ This tool is coded as a web application and uses the following programming and m
 
 ## Libraries
 
+### Material Design Lite
 Responsive web design framework by Google
 
 ### Firebase
@@ -29,6 +30,11 @@ Provides:
 - Database (see below)
 - Authentication
 - Crash reporting
+
+## Snippets
+
+ - Email address-matching regular expression: https://stackoverflow.com/a/742455
+ - Center login field on page: https://stackoverflow.com/a/47783851
 
 ## Database
 
