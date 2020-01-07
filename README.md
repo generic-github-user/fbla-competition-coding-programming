@@ -21,8 +21,9 @@ A data serialization language used in Firebase databases.
 
 ## Pages
 
- - Home (index.html)
- - Login (login.html)
+ - Home (index.html) - main and default page
+ - Login (login.html) - used to log into the application
+ - Register (register.html) - account creation page
 
 ## Libraries
 
