@@ -31,6 +31,9 @@ Provides:
 - Authentication
 - Crash reporting
 
+### jQuery
+Multi-purpose JavaScript library
+
 ## Snippets
 
  - Email address-matching regular expression: https://stackoverflow.com/a/742455
