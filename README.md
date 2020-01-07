@@ -8,12 +8,16 @@ The application is a [web app](https://en.wikipedia.org/wiki/Web_application) an
 This tool is coded as a web application and uses the following programming and markup languages to function.
 
 ### HTML
+Markup language used to provide the structure of a website or web application; the "skeleton" of the program.
 
 ### CSS
+Markup language that changes the styling of HTML elements; the "paint" applied to make websites look better.
 
 ### JavaScript
+Scripting language used for dynamic content and interactive functionality.
 
 ### JSON
+A data serialization language used in Firebase databases.
 
 ## Pages
 
