@@ -14,27 +14,29 @@
 <body>
       <div class="mdl-cell mdl-cell--middle">
             <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" id="user" pattern="^\S+@\S+$">
+                  <input class="mdl-textfield__input" type="text" id="email" pattern="^\S+@\S+$">
                   <label class="mdl-textfield__label" for="user">Email address</label>
                   <span class="mdl-textfield__error">Please enter a valid email address</span>
             </div>
             <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="password" id="user">
+                  <input class="mdl-textfield__input" type="password" id="password">
                   <label class="mdl-textfield__label" for="user">Password</label>
             </div>
             <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="password" id="user">
+                  <input class="mdl-textfield__input" type="password" id="confirm-password">
                   <label class="mdl-textfield__label" for="user">Confirm password</label>
             </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            <button id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                   Register
             </button>
       </div>
 
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
       <script src="./js/firebase.js"></script>
       <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
+      <script src="./js/register.js"></script>
 </body>
 
 </html>
