@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-      <head>
-            <meta charset="utf-8">
-            <title>Sign In</title>
 
-            <link rel="stylesheet" href="./lib/mdl/material.min.css">
-            <script src="./lib/mdl/material.min.js"></script>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      </head>
-      <body>
-            <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" id="user" pattern="^\S+@\S+$">
-                  <label class="mdl-textfield__label" for="user">User name</label>
-                  <span class="mdl-textfield__error">Please enter a valid email address</span>
+<head>
+      <meta charset="utf-8">
+      <title>Sign In</title>
+
+      <link rel="stylesheet" href="./lib/mdl/material.min.css">
+      <script src="./lib/mdl/material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+      <div class="mdl-grid center-items">
+            <div class="mdl-cell mdl-cell--4-col">
+                  <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="user" pattern="^\S+@\S+$">
+                        <label class="mdl-textfield__label" for="user">User name</label>
+                        <span class="mdl-textfield__error">Please enter a valid email address</span>
+                  </div>
+                  <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="password" id="user">
+                        <label class="mdl-textfield__label" for="user">Password</label>
+                  </div>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        Log In
+                  </button>
             </div>
-            <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="password" id="user">
-                  <label class="mdl-textfield__label" for="user">Password</label>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                  Log In
-            </button>
-      </body>
+      </div>
+</body>
+
 </html>
