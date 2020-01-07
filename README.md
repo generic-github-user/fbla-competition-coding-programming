@@ -1,7 +1,7 @@
 # fbla-competition-coding-programming
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
-The application is a web app and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. Future work could include wrapping the application into an Electron app so it can be used as a native desktop application.
+The application is a [web app](https://en.wikipedia.org/wiki/Web_application) and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.
 
 ## Languages
 
