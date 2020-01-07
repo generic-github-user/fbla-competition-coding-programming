@@ -9,6 +9,17 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       </head>
       <body>
-
+            <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="text" id="user" pattern="^\S+@\S+$">
+                  <label class="mdl-textfield__label" for="user">User name</label>
+                  <span class="mdl-textfield__error">Please enter a valid email address</span>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="password" id="user">
+                  <label class="mdl-textfield__label" for="user">Password</label>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                  Log In
+            </button>
       </body>
 </html>
