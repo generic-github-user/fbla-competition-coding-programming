@@ -62,3 +62,19 @@ Multi-purpose JavaScript library
      - /grade
      - /hours
  - Cloud Firestore location: nam5 (us-central)
+
+## Other Software Used
+
+Software not included in the program itself, but used to create it.
+
+### Atom
+
+The best text editor ever, with full customization, incredible package manager, autofilling snippets, Git integration, and much more.
+
+### Google Chrome
+
+Web browser used for most testing.
+
+### Git
+
+Version control & file tracking.
