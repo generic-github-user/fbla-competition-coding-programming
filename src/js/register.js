@@ -5,6 +5,12 @@ $('button#register').click(function() {
       var password = $('input#password').val();
       // Create account
       firebase.auth().createUserWithEmailAndPassword(email, password);
-      // Redirect to home back
+
+      // Reset input fields
+      $('input#email').val('');
+      $('input#password').val('');
+      $('input#confirm-password').val('');
+
+      // Redirect to home page
       window.location.replace("./index.html");
 });
