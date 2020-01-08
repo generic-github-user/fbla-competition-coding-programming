@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <title>Dashboard</title>
 
+      <link rel="stylesheet" href="./css/dashboard.css">
       <link rel="stylesheet" href="./lib/mdl/material.min.css">
       <script src="./lib/mdl/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -20,7 +21,7 @@
                   </div>
                   <!-- Tabs -->
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+                        <a href="#students" class="mdl-layout__tab is-active">Students</a>
                         <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
                         <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
                   </div>
@@ -29,9 +30,15 @@
                   <span class="mdl-layout-title">Title</span>
             </div>
             <main class="mdl-layout__content">
-                  <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                  <section class="mdl-layout__tab-panel is-active" id="students">
                         <div class="page-content">
-                              <!-- Your content goes here -->
+                              <button id="add-student" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
+                                    <i class="material-icons">add</i>
+                              </button>
+
+                              <div class="mdl-tooltip" data-mdl-for="add-student">
+                                    Add Student
+                              </div>
                         </div>
                   </section>
                   <section class="mdl-layout__tab-panel" id="fixed-tab-2">
