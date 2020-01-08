@@ -8,5 +8,6 @@ body {
 }
 
 button#log-in {
-      width: 100%;
+      width: 300px;
+      max-width: 100%;
 }
