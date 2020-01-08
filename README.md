@@ -3,6 +3,13 @@
 
 The application is a [web app](https://en.wikipedia.org/wiki/Web_application) and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.
 
+## Why a web app?
+
+### Security
+
+### Portability
+This program can be run locally as described above, uploaded to a web server and used as a website, or converted to a desktop app with minimal effort using a tool like Electron. This makes it easy to use regardless of where the user is and eliminates the need for dependencies on other software packages; everything that is needed can be loaded dynamically.
+
 ## Languages
 
 This tool is coded as a web application and uses the following programming and markup languages to function.
