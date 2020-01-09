@@ -43,6 +43,14 @@ $('dialog button.confirm').click(function() {
             // Catch errors and log to console
             .catch(function(error) {
                   console.error("Error adding document: ", error);
+
+                  var notification = document.querySelector('.mdl-js-snackbar');
+                  var snackbar_data = {
+                        message: 'Error; could not add student.',
+                        timeout: 5000
+                  };
+                  // Display snackbar notification
+                  notification.MaterialSnackbar.showSnackbar(snackbar_data);
             });
       // Close dialog box
       dialog.close();
