@@ -4,4 +4,5 @@ button, .mdl-layout__tab {
 
 dialog {
       width: 50% !important;
+      max-width: 500px;
 }

@@ -52,6 +52,7 @@ Multi-purpose JavaScript library
 
  - Email address-matching regular expression: https://stackoverflow.com/a/742455
  - Center login field on page: https://stackoverflow.com/a/47783851
+ - Dashboard page layout: https://getmdl.io/components/index.html#layout-section
 
 ## Database
 
