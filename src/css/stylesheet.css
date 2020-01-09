@@ -1,3 +1,7 @@
 button, .mdl-layout__tab {
       user-select: none;
 }
+
+dialog {
+      width: 50% !important;
+}

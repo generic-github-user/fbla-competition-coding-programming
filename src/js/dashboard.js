@@ -5,6 +5,6 @@ if (!dialog.showModal) {
 $('button#add-student').click(function() {
       dialog.showModal();
 });
-dialog.querySelector('.close').addEventListener('click', function() {
+$('button.close').click(function() {
       dialog.close();
 });
