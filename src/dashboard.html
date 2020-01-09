@@ -80,9 +80,14 @@
                                           <!-- Cancel -->
                                           <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Cancel</button>
                                           <!-- Add student -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Add</button>
+                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">Add</button>
                                     </div>
                               </dialog>
+
+                              <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+                                    <div class="mdl-snackbar__text"></div>
+                                    <button class="mdl-snackbar__action" type="button"></button>
+                              </div>
                         </div>
                   </section>
                   <section class="mdl-layout__tab-panel" id="fixed-tab-2">
@@ -98,16 +103,17 @@
             </main>
       </div>
 
-      <!-- JavaScript -->
-      <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
-      <script src="./js/dashboard.js" charset="utf-8"></script>
-      <script src="./js/clear_fields.js" charset="utf-8"></script>
-
       <!-- Firebase -->
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
       <script src="./js/firebase.js"></script>
+
+      <!-- JavaScript -->
+      <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
+      <script src="./js/dashboard.js" charset="utf-8"></script>
+      <script src="./js/clear_fields.js" charset="utf-8"></script>
 </body>
 
 </html>

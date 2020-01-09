@@ -53,6 +53,8 @@ Multi-purpose JavaScript library
  - Email address-matching regular expression: https://stackoverflow.com/a/742455
  - Center login field on page: https://stackoverflow.com/a/47783851
  - Dashboard page layout: https://getmdl.io/components/index.html#layout-section
+ - Adding data to Firebase Cloud Firestore: https://github.com/firebase/snippets-web/blob/cec7d56a58076a5fb6a1fb1de2d65f617d617113/firestore/test.firestore.js#L92-L102
+ - Snackbar code: https://getmdl.io/components/index.html#snackbar-section
 
 ## Database
 
