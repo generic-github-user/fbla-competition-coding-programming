@@ -5,37 +5,47 @@
       <meta charset="utf-8">
       <title>Register</title>
 
+      <!-- Material Design Lite -->
       <link rel="stylesheet" href="./lib/mdl/material.min.css">
       <script src="./lib/mdl/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <!-- Other stylesheets -->
       <link rel="stylesheet" href="./css/register.css">
       <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
       <div class="mdl-cell mdl-cell--middle">
+            <!-- Email field -->
             <div class="mdl-textfield mdl-js-textfield">
                   <input class="mdl-textfield__input" type="text" id="email" pattern="^\S+@\S+$">
                   <label class="mdl-textfield__label" for="user">Email address</label>
                   <span class="mdl-textfield__error">Please enter a valid email address</span>
             </div>
+            <!-- Password field -->
             <div class="mdl-textfield mdl-js-textfield">
                   <input class="mdl-textfield__input" type="password" id="password">
                   <label class="mdl-textfield__label" for="user">Password</label>
             </div>
+            <!-- Confirm password field -->
             <div class="mdl-textfield mdl-js-textfield">
                   <input class="mdl-textfield__input" type="password" id="confirm-password">
                   <label class="mdl-textfield__label" for="user">Confirm password</label>
             </div>
+            <!-- Register button -->
             <button id="register" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                   Register
             </button>
       </div>
 
+      <!-- Firebase scripts -->
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
       <script src="./js/firebase.js"></script>
+
+      <!-- Other scripts -->
       <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
       <script src="./js/register.js"></script>
 </body>
