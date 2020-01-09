@@ -5,14 +5,18 @@
       <meta charset="utf-8">
       <title>Dashboard</title>
 
-      <link rel="stylesheet" href="./css/dashboard.css">
+      <!-- Material Design Lite -->
       <link rel="stylesheet" href="./lib/mdl/material.min.css">
       <script src="./lib/mdl/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <!-- Other stylesheets -->
+      <link rel="stylesheet" href="./css/dashboard.css">
       <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 
 <body>
+      <!-- Content -->
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
             <header class="mdl-layout__header">
@@ -31,32 +35,39 @@
                   <span class="mdl-layout-title">Title</span>
             </div>
             <main class="mdl-layout__content">
+                  <!-- Students tab -->
                   <section class="mdl-layout__tab-panel is-active" id="students">
                         <div class="page-content">
+                              <!-- Add student button -->
                               <button id="add-student" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
                                     <i class="material-icons">add</i>
                               </button>
-
+                              <!-- Tooltip -->
                               <div class="mdl-tooltip" data-mdl-for="add-student">
                                     Add Student
                               </div>
 
+                              <!-- Add student dialog box -->
                               <dialog class="mdl-dialog">
+                                    <!-- Title -->
                                     <h4 class="mdl-dialog__title">Add Student</h4>
                                     <div class="mdl-dialog__content">
                                           <!-- <p>
                                                 Allowing us to collect data will let us get you the information you want faster.
                                           </p> -->
                                           <form action="#">
+                                                <!-- Name -->
                                                 <div class="mdl-textfield mdl-js-textfield">
                                                       <input class="mdl-textfield__input" type="text" id="student-name">
                                                       <label class="mdl-textfield__label" for="student-name">Name</label>
                                                 </div>
+                                                <!-- Number -->
                                                 <div class="mdl-textfield mdl-js-textfield">
                                                       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
                                                       <label class="mdl-textfield__label" for="student-number">Student Number</label>
                                                       <span class="mdl-textfield__error">Input must be a number</span>
                                                 </div>
+                                                <!-- Grade -->
                                                 <div class="mdl-textfield mdl-js-textfield">
                                                       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
                                                       <label class="mdl-textfield__label" for="student-grade">Grade</label>
@@ -64,9 +75,12 @@
                                                 </div>
                                           </form>
                                     </div>
+                                    <!-- Action buttons -->
                                     <div class="mdl-dialog__actions">
-                                          <button type="button" class="mdl-button close">Cancel</button>
-                                          <button type="button" class="mdl-button">Add</button>
+                                          <!-- Cancel -->
+                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Cancel</button>
+                                          <!-- Add student -->
+                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary">Add</button>
                                     </div>
                               </dialog>
                         </div>
@@ -84,6 +98,7 @@
             </main>
       </div>
 
+      <!-- JavaScript -->
       <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
       <script src="./js/dashboard.js" charset="utf-8"></script>
 </body>
