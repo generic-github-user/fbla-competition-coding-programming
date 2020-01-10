@@ -11,16 +11,23 @@ let mainWindow
 
 function createWindow() {
       // Create the browser window.
-      mainWindow = new BrowserWindow({
+      browser_info = {
             width: 1280,
             height: 720,
             webPreferences: {
                   preload: path.join(__dirname, 'preload.js')
             }
-      })
+      }
+      mainWindow = new BrowserWindow(browser_info)
+      //var mainWindow = null;
+      // setTimeout(function() {
+      //       mainWindow = new BrowserWindow({
+      //             browser_info
+      //       });
+      // }, 0);
 
       // and load the index.html of the app.
-      mainWindow.loadFile('index.html')
+      mainWindow.loadFile('dashboard.html')
       //mainWindow.removeMenu()
       //mainWindow.setMenu(null)
       mainWindow.setMenuBarVisibility(false)
