@@ -1,18 +1,22 @@
 {
   "name": "fbla-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "App for tracking FBLA volunteer hours.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "repository": "",
   "keywords": [
-    "Electron"
+    "Electron",
+    "Material Design Lite",
+    "Firebase",
+    "Web"
   ],
   "author": "JA",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^7.1.8"
+    "electron": "^7.1.7"
   }
 }
