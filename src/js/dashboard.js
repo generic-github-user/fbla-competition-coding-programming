@@ -55,3 +55,11 @@ $('dialog button.confirm').click(function() {
       // Close dialog box
       dialog.close();
 });
+
+function loggedout() {
+      if (!firebase.auth().user) {
+            window.location.href = './login.html';
+      }
+}
+firebase.auth().onAuthStateChanged(loggedout);
+loggedout();

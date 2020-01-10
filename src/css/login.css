@@ -1,6 +1,12 @@
 /*.mdl-grid.center-items {
       justify-content: center;
 }*/
+#login-container {
+      width: 360px;
+      padding: 30px;
+      box-sizing: border-box;
+}
+
 body {
       display: flex;
       align-items: center;
@@ -8,6 +14,12 @@ body {
 }
 
 button#log-in {
-      width: 300px;
+      width: 100%;
       max-width: 100%;
+      margin-bottom: 20px;
+}
+
+a {
+      text-decoration: none;
+      font-size: 125%;
 }
