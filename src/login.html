@@ -15,12 +15,12 @@
 <body>
       <div class="mdl-cell mdl-cell--middle mdl-shadow--2dp" id="login-container">
             <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" id="user" pattern="^\S+@\S+$">
+                  <input class="mdl-textfield__input" type="text" id="email" pattern="^\S+@\S+$">
                   <label class="mdl-textfield__label" for="user">Email address</label>
                   <span class="mdl-textfield__error">Please enter a valid email address</span>
             </div>
             <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="password" id="user">
+                  <input class="mdl-textfield__input" type="password" id="password">
                   <label class="mdl-textfield__label" for="user">Password</label>
             </div>
             <button id="log-in" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -31,7 +31,11 @@
 
       <script src="./lib/firebase/7.6.1/firebase-app.js"></script>
       <script src="./lib/firebase/7.6.1/firebase-analytics.js"></script>
+      <script src="./lib/firebase/7.6.1/firebase-auth.js"></script>
       <script src="./js/firebase.js"></script>
+
+      <script src="./lib/jquery/jquery-3.4.1.min.js" charset="utf-8"></script>
+      <script src="./js/login.js"></script>
 </body>
 
 </html>

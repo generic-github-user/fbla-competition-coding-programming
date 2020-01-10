@@ -57,9 +57,10 @@ $('dialog button.confirm').click(function() {
 });
 
 function loggedout() {
-      if (!firebase.auth().user) {
+      if (firebase.auth().currentUser == null) {
             window.location.href = './login.html';
       }
 }
+
 firebase.auth().onAuthStateChanged(loggedout);
-loggedout();
+window.setTimeout(loggedout, 1000);
