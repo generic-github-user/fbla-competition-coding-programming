@@ -68,7 +68,7 @@ db.collection('students')
                   data = doc.data();
 
                   $('#student-list').append(
-                        $('<tr><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td></tr>')
+                        $('<tr><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td><td>' + data.total_hours + '</td></tr>')
                   );
             });
       })
