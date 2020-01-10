@@ -3,3 +3,15 @@ button#add-student {
       right: 50px;
       bottom: 50px;
 }
+
+table {
+      width: 100%;
+}
+
+table * {
+      text-align: left !important;
+}
+
+div.page-content {
+      padding: 50px;
+}

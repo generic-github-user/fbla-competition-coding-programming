@@ -56,6 +56,27 @@ $('dialog button.confirm').click(function() {
       dialog.close();
 });
 
+db.collection('students')
+      .orderBy('name')
+      .limit(10)
+      .get()
+      .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
+                  // doc.data() is never undefined for query doc snapshots
+                  console.log('retrieved student information');
+                  console.log(doc.id, " => ", doc.data());
+                  data = doc.data();
+
+                  $('#student-list').append(
+                        $('<tr><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td></tr>')
+                  );
+            });
+      })
+      .catch(function(error) {
+            console.log("Error getting documents: ", error);
+      });
+
+
 function loggedout() {
       if (firebase.auth().currentUser == null) {
             window.location.href = './login.html';
