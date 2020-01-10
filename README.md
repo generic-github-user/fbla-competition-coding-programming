@@ -55,6 +55,7 @@ Multi-purpose JavaScript library
  - Dashboard page layout: https://getmdl.io/components/index.html#layout-section
  - Adding data to Firebase Cloud Firestore: https://github.com/firebase/snippets-web/blob/cec7d56a58076a5fb6a1fb1de2d65f617d617113/firestore/test.firestore.js#L92-L102
  - Snackbar code: https://getmdl.io/components/index.html#snackbar-section
+ - Electron starter code: https://github.com/electron/electron-quick-start/blob/master/main.js
 
 ## Database
 
