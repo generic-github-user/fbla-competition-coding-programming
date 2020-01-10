@@ -1,7 +1,7 @@
 # fbla-competition-coding-programming
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
-The application is a [web app](https://en.wikipedia.org/wiki/Web_application) and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.
+The application is a [web app](https://en.wikipedia.org/wiki/Web_application) and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
 
 ## Why a web app?
 
@@ -33,6 +33,10 @@ A data serialization language used in Firebase databases.
  - Register (register.html) - account creation page
 
 ## Libraries
+
+### Electron
+
+Used as a wrapper for the web app to run it as an executable file for Windows, Linux, and MacOS through the Chromium browser (in order to meet the standalone software requirement in the rules).
 
 ### Material Design Lite
 Responsive web design framework by Google
@@ -77,7 +81,7 @@ The best text editor ever, with full customization, incredible package manager, 
 
 ### Google Chrome
 
-Web browser used for most testing.
+Web browser used for most testing and foundation for Electron.
 
 ### Git
 
