@@ -13,7 +13,7 @@ firebase.firestore().collection('students').doc(student_id).get().then(function(
             focused_student_id = student_id;
 
             // Set title of box
-            $('dialog#view-student > *.student-name').text(data.name);
+            $('#student-name').text(data.name);
             // List of properties to load
             properties = ['name', 'number', 'grade', 'total_hours'];
             // Cycle through properties
