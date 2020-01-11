@@ -19,12 +19,13 @@ $('dialog button.confirm').click(function() {
       var name = $('dialog input#student-name').val();
       var number = $('dialog input#student-number').val();
       var grade = $('dialog input#student-grade').val();
+      var hours = $('dialog input#student-hours').val();
       // Upload to database
       db.collection("students").add({
                   name: name,
                   number: number,
                   grade: grade,
-                  total_hours: 0
+                  total_hours: hours
             })
             .then(function(docRef) {
                   // Log successful operation to console

@@ -23,7 +23,7 @@ function view_student(student_id) {
                   // Set title of box
                   $('dialog#view-student > *.student-name').text(data.name);
                   // List of properties to load
-                  properties = ['name', 'number', 'grade'];
+                  properties = ['name', 'number', 'grade', 'total_hours'];
                   // Cycle through properties
                   for (var i = 0; i < properties.length; i++) {
                         // Get input box element
