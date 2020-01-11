@@ -18,3 +18,13 @@ $('button#log-in').click(function() {
       // Redirect to home page
       window.location.replace("./index.html");
 });
+
+function loggedin() {
+      if (firebase.auth().currentUser !== null) {
+            console.log('Already logged in - redirecting...');
+            window.location.href = './dashboard.html';
+      }
+}
+
+firebase.auth().onAuthStateChanged(loggedin);
+window.setTimeout(loggedin, 1000);
