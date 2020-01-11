@@ -11,6 +11,14 @@ dialog h5 {
       padding-top: 5px !important;
 }
 
+dialog#help-search li {
+      padding: 0px !important;
+}
+
+dialog#help-search ul {
+      margin: 0px !important;
+}
+
 button.help {
       position: absolute;
       right: 50px;
