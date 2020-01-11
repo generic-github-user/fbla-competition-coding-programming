@@ -8,6 +8,9 @@ db.collection('students')
       // Get values
       .get()
       .then(function(querySnapshot) {
+            // $('#student-list .mdl-progress').remove();
+            // $('div.mdl-progress').append($('<tbody id="student-list">'));
+
             console.log('Retrieved student information');
             querySnapshot.forEach(function(doc) {
                   // doc.data() is never undefined for query doc snapshots

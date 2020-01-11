@@ -4,21 +4,23 @@ var view_student_dialog = document.querySelector('dialog#view-student');
 if (!view_student_dialog.showModal) {
       dialogPolyfill.registerDialog(view_student_dialog);
 }
-$('button.close').click(function() {
+$('dialog#view-student button.close').click(function() {
+      $('dialog#view-student > *.student-name').text('');
+      clear_fields($('dialog#view-student'));
       view_student_dialog.close();
 });
 
 // Create a dialog to view an existing student
 function view_student(student_id) {
+      // Show dialog box
+      view_student_dialog.showModal();
+
       // Get student data from database
       db.collection('students').doc(student_id).get().then(function(doc) {
             // If student exists, load
             if (doc.exists) {
                   console.log("Student data:", doc.data());
                   data = doc.data();
-
-                  // Show dialog box
-                  view_student_dialog.showModal();
 
                   // Set title of box
                   $('dialog#view-student > *.student-name').text(data.name);
