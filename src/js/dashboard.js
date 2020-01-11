@@ -4,5 +4,6 @@ function loggedout() {
       }
 }
 
+db = firebase.firestore();
 firebase.auth().onAuthStateChanged(loggedout);
 window.setTimeout(loggedout, 1000);

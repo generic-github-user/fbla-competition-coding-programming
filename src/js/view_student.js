@@ -1,3 +1,5 @@
+focused_student_id = '';
+
 // Dialog handling
 var view_student_dialog = document.querySelector('dialog#view-student');
 // Polyfill
@@ -9,6 +11,10 @@ $('dialog#view-student button.close').click(function() {
       clear_fields($('dialog#view-student'));
       view_student_dialog.close();
 });
+$('dialog#view-student button.confirm').click(function() {
+      // write_student_info('dialog.view-student', 'Updated student information: ', firebase.firestore().collection("students").doc(focused_student_id), 'set');
+      write_student_info('dialog.view-student', 'Updated student information: ', focused_student_id);
+})
 
 // Create a dialog to view an existing student
 function view_student(student_id) {
@@ -21,6 +27,7 @@ function view_student(student_id) {
             if (doc.exists) {
                   console.log("Student data:", doc.data());
                   data = doc.data();
+                  focused_student_id = student_id;
 
                   // Set title of box
                   $('dialog#view-student > *.student-name').text(data.name);

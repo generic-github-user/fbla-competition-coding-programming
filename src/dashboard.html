@@ -104,7 +104,7 @@
                               </div>
 
                               <!-- Add student dialog box -->
-                              <dialog class="mdl-dialog">
+                              <dialog class="mdl-dialog add-student">
                                     <!-- Title -->
                                     <h4 class="mdl-dialog__title">Add Student</h4>
                                     <div class="mdl-dialog__content">
@@ -146,7 +146,7 @@
                                     </div>
                               </dialog>
 
-                              <dialog class="mdl-dialog" id="view-student">
+                              <dialog class="mdl-dialog view-student" id="view-student">
                                     <!-- Title -->
                                     <h4 class="mdl-dialog__title student-name"></h4>
                                     <div class="mdl-dialog__content">
@@ -178,6 +178,9 @@
                                     </div>
                                     <!-- Action buttons -->
                                     <div class="mdl-dialog__actions">
+                                          <!-- Update student information -->
+                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">Update</button>
+                                          <!-- Close window (dialog) -->
                                           <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Close</button>
                                     </div>
                               </dialog>
@@ -211,6 +214,8 @@
       <!-- JavaScript -->
       <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
       <script src="./js/clear_fields.js" charset="utf-8"></script>
+      <script src="./js/generate_id.js" charset="utf-8"></script>
+      <script src="./js/write_student_info.js" charset="utf-8"></script>
       <script src="./js/snackbar.js" charset="utf-8"></script>
       <script src="./js/notification.js" charset="utf-8"></script>
       <script src="./js/dashboard.js" charset="utf-8"></script>
