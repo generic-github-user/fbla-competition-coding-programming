@@ -35,6 +35,7 @@ A data serialization language used in Firebase databases.
 ## Libraries
 
 ### Electron
+https://electronjs.org/
 
 Used as a wrapper for the web app to run it as an executable file for Windows, Linux, and MacOS through the Chromium browser (in order to meet the standalone software requirement in the rules).
 
@@ -44,9 +45,13 @@ https://github.com/electron/electron-packager
 Used to build and package the web app into an Electron executable runnable on any Windows machine.
 
 ### Material Design Lite
+https://getmdl.io/
+
 Responsive web design framework by Google
 
 ### Firebase
+https://firebase.google.com/
+
 Application backend and database tool, also by Google
 
 Provides:
@@ -55,6 +60,8 @@ Provides:
 - Crash reporting
 
 ### jQuery
+https://jquery.com/
+
 Multi-purpose JavaScript library
 
 ## Snippets
@@ -82,13 +89,16 @@ Multi-purpose JavaScript library
 Software not included in the program itself, but used to create it.
 
 ### Atom
+https://atom.io/
 
 The best text editor ever, with full customization, incredible package manager, autofilling snippets, Git integration, and much more.
 
 ### Google Chrome
+https://www.google.com/chrome/
 
 Web browser used for most testing and foundation for Electron.
 
 ### Git
+https://git-scm.com/
 
 Version control & file tracking.
