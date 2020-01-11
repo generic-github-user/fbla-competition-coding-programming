@@ -7,7 +7,7 @@ if (!view_student_dialog.showModal) {
       dialogPolyfill.registerDialog(view_student_dialog);
 }
 $('dialog#view-student button.close').click(function() {
-      $('dialog#view-student > *.student-name').text('');
+      $('dialog#view-student > *.student-name').text('Student Overview');
       clear_fields($('dialog#view-student'));
       view_student_dialog.close();
 });
