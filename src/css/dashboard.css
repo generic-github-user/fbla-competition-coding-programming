@@ -4,6 +4,11 @@ button#add-student {
       bottom: 50px;
 }
 
+button.help {
+      position: absolute;
+      right: 50px;
+}
+
 table {
       width: 100%;
 }
