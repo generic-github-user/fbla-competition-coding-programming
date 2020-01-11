@@ -1,7 +1,7 @@
 # fbla-competition-coding-programming
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
-The application is a [web app](https://en.wikipedia.org/wiki/Web_application) and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
+The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
 
 ## Why a web app?
 
@@ -38,6 +38,11 @@ A data serialization language used in Firebase databases.
 
 Used as a wrapper for the web app to run it as an executable file for Windows, Linux, and MacOS through the Chromium browser (in order to meet the standalone software requirement in the rules).
 
+### Electron Packager
+https://github.com/electron/electron-packager
+
+Used to build and package the web app into an Electron executable runnable on any Windows machine.
+
 ### Material Design Lite
 Responsive web design framework by Google
 
@@ -60,6 +65,7 @@ Multi-purpose JavaScript library
  - Adding data to Firebase Cloud Firestore: https://github.com/firebase/snippets-web/blob/cec7d56a58076a5fb6a1fb1de2d65f617d617113/firestore/test.firestore.js#L92-L102
  - Snackbar code: https://getmdl.io/components/index.html#snackbar-section
  - Electron starter code: https://github.com/electron/electron-quick-start/blob/master/main.js
+ - Other Electron scripts: https://github.com/electron/electron-quick-start
 
 ## Database
 
