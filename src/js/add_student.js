@@ -25,7 +25,9 @@ $('dialog button.confirm').click(function() {
                   name: name,
                   number: number,
                   grade: grade,
-                  total_hours: hours
+                  total_hours: hours,
+                  created: new Date().getTime(),
+                  created_by: firebase.auth().currentUser.uid
             })
             .then(function(docRef) {
                   // Log successful operation to console
