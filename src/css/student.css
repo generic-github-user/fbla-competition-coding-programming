@@ -1,8 +1,23 @@
+* {
+      box-sizing: border-box;
+}
+
+#student-name {
+      margin: 0px;
+}
+
 #student-info {
-      width: 300px;
-      margin: 30px;
+      float: left;
+      width: 20%;
+      margin: 40px 5%;
 }
 
 #student-info>* {
       width: 100%;
+}
+
+table.service-list {
+      float: right;
+      width: 60%;
+      margin: 40px 5%;
 }
