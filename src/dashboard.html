@@ -124,6 +124,36 @@
                                     </div>
                               </dialog>
 
+                              <dialog class="mdl-dialog" id="view-student">
+                                    <!-- Title -->
+                                    <h4 class="mdl-dialog__title student-name"></h4>
+                                    <div class="mdl-dialog__content">
+                                          <form action="#">
+                                                <!-- Name -->
+                                                <div class="mdl-textfield mdl-js-textfield">
+                                                      <input class="mdl-textfield__input" type="text" id="student-name">
+                                                      <label class="mdl-textfield__label" for="student-name">Name</label>
+                                                </div>
+                                                <!-- Number -->
+                                                <div class="mdl-textfield mdl-js-textfield">
+                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
+                                                      <label class="mdl-textfield__label" for="student-number">Student Number</label>
+                                                      <span class="mdl-textfield__error">Input must be a number</span>
+                                                </div>
+                                                <!-- Grade -->
+                                                <div class="mdl-textfield mdl-js-textfield">
+                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
+                                                      <label class="mdl-textfield__label" for="student-grade">Grade</label>
+                                                      <span class="mdl-textfield__error">Input must be a number</span>
+                                                </div>
+                                          </form>
+                                    </div>
+                                    <!-- Action buttons -->
+                                    <div class="mdl-dialog__actions">
+                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Close</button>
+                                    </div>
+                              </dialog>
+
                               <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
                                     <div class="mdl-snackbar__text"></div>
                                     <button class="mdl-snackbar__action" type="button"></button>

@@ -12,6 +12,10 @@ table * {
       text-align: left !important;
 }
 
+table tr {
+      cursor: pointer;
+}
+
 div.page-content {
       padding: 50px;
 }
