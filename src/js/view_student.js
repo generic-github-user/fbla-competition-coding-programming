@@ -14,7 +14,10 @@ $('dialog#view-student button.close').click(function() {
 $('dialog#view-student button.confirm').click(function() {
       // write_student_info('dialog.view-student', 'Updated student information: ', firebase.firestore().collection("students").doc(focused_student_id), 'set');
       write_student_info('dialog.view-student', 'Updated student information: ', focused_student_id);
-})
+});
+$('dialog#view-student button.view-report').click(function() {
+      window.location.href = './student.html?student_id=' + focused_student_id;
+});
 
 // Create a dialog to view an existing student
 function view_student(student_id) {
@@ -52,7 +55,6 @@ function view_student(student_id) {
       }).catch(function(error) {
             // Log error
             console.log("Error getting document:", error);
-
             snackbar('Error; could not load student information.');
       });
 }
