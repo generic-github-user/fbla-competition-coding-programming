@@ -16,12 +16,12 @@
       <div class="mdl-cell mdl-cell--middle mdl-shadow--2dp" id="login-container">
             <form action="#">
                   <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="email" pattern="^\S+@\S+$">
+                        <input class="mdl-textfield__input" type="text" id="email" autocomplete="email" pattern="^\S+@\S+$">
                         <label class="mdl-textfield__label" for="user">Email address</label>
                         <span class="mdl-textfield__error">Please enter a valid email address</span>
                   </div>
                   <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="password" id="password">
+                        <input class="mdl-textfield__input" type="password" autocomplete="current-password" id="password">
                         <label class="mdl-textfield__label" for="user">Password</label>
                   </div>
                   <button id="log-in" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
