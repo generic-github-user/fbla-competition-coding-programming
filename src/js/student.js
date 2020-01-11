@@ -1,5 +1,9 @@
 student_id = new URL(window.location.href).searchParams.get('student_id');
 
+function get_name(user_id) {
+      return 'Phil';
+}
+
 // Get student data from database
 firebase.firestore().collection('students').doc(student_id).get().then(function(doc) {
       // If student exists, load
@@ -22,7 +26,10 @@ firebase.firestore().collection('students').doc(student_id).get().then(function(
                   field.parent().addClass('is-dirty');
             }
 
-
+            $('#student-created').text('Added: ' + new Date(data.created));
+            $('#student-created-by').text('Added by: ' + get_name(data.created_by));
+            $('#student-updated').text('Updated: ' + new Date(data.updated));
+            $('#student-updated-by').text('Updated most recently by: ' + get_name(data.updated_by));
 
             // $('dialog#view-student input#student-number').val(data.number);
             // $('dialog#view-student input#student-grade').val(data.grade);
