@@ -9,6 +9,11 @@ button.help {
       right: 50px;
 }
 
+button.action {
+      position: absolute;
+      right: 90px;
+}
+
 table {
       width: 100%;
 }
