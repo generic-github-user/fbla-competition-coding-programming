@@ -5,6 +5,12 @@ button#add-student {
       z-index: 10;
 }
 
+dialog h5 {
+      font-size: 150% !important;
+      color: #AAA;
+      padding-top: 5px !important;
+}
+
 button.help {
       position: absolute;
       right: 50px;
