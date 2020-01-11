@@ -4,7 +4,7 @@ db.collection('students')
       // Sort by name
       .orderBy('name')
       // Limit to 10 students
-      .limit(10)
+      .limit(100)
       // Get values
       .get()
       .then(function(querySnapshot) {
