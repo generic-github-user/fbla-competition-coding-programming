@@ -33,7 +33,9 @@ $('dialog button.confirm').click(function() {
                   var notification = document.querySelector('.mdl-js-snackbar');
                   var snackbar_data = {
                         message: 'Added student: ' + name + ' [' + grade + ']',
-                        actionHandler: function(event) {},
+                        actionHandler: function(event) {
+                              view_student(docRef.id);
+                        },
                         actionText: 'View',
                         timeout: 5000
                   };
@@ -53,7 +55,7 @@ $('dialog button.confirm').click(function() {
                   notification.MaterialSnackbar.showSnackbar(snackbar_data);
             });
       // Close dialog box
-      dialog.close();
+      add_student_dialog.close();
 });
 
 // Dialog handling
