@@ -66,6 +66,8 @@ Multi-purpose JavaScript library
 
 ## Snippets
 
+Short sections of code and templates used in the project.
+
  - Email address-matching regular expression: https://stackoverflow.com/a/742455
  - Center login field on page: https://stackoverflow.com/a/47783851
  - Dashboard page layout: https://getmdl.io/components/index.html#layout-section
@@ -73,6 +75,9 @@ Multi-purpose JavaScript library
  - Snackbar code: https://getmdl.io/components/index.html#snackbar-section
  - Electron starter code: https://github.com/electron/electron-quick-start/blob/master/main.js
  - Other Electron scripts: https://github.com/electron/electron-quick-start
+ - Various Firebase / Cloud Firestore: https://github.com/firebase/snippets-web/blob/cec7d56a58076a5fb6a1fb1de2d65f617d617113/firestore/test.firestore.js
+ - Firebase storage ID generation: https://gist.github.com/mikelehen/3596a30bd69384624c11
+ - Material Design Lite article template (Apache License): https://github.com/google/material-design-lite/tree/mdl-1.x/templates/article
 
 ## Database
 
