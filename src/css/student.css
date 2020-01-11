@@ -8,8 +8,9 @@
 
 #student-info {
       float: left;
-      width: 20%;
-      margin: 40px 5%;
+      width: 32%;
+      margin: 40px 2%;
+      padding: 20px;
 }
 
 #student-info>* {
@@ -19,5 +20,5 @@
 table.service-list {
       float: right;
       width: 60%;
-      margin: 40px 5%;
+      margin: 40px 2%;
 }
