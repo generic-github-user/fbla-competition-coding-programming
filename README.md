@@ -10,7 +10,7 @@ The application is built as a [web app](https://en.wikipedia.org/wiki/Web_applic
 ### Portability
 This program can be run locally as described above, uploaded to a web server and used as a website, or converted to a desktop app with minimal effort using a tool like Electron. This makes it easy to use regardless of where the user is and eliminates the need for dependencies on other software packages; everything that is needed can be loaded dynamically.
 
-## Languages
+## Programming Languages
 
 This tool is coded as a web application and uses the following programming and markup languages to function.
 
@@ -32,24 +32,26 @@ A data serialization language used in Firebase databases.
  - Login (login.html) - used to log into the application
  - Register (register.html) - account creation page
 
-## Libraries
+## Acknowledgements
 
-### Electron
+### Libraries
+
+#### Electron
 https://electronjs.org/
 
 Used as a wrapper for the web app to run it as an executable file for Windows, Linux, and MacOS through the Chromium browser (in order to meet the standalone software requirement in the rules).
 
-### Electron Packager
+#### Electron Packager
 https://github.com/electron/electron-packager
 
 Used to build and package the web app into an Electron executable runnable on any Windows machine.
 
-### Material Design Lite
+#### Material Design Lite
 https://getmdl.io/
 
 Responsive web design framework by Google
 
-### Firebase
+#### Firebase
 https://firebase.google.com/
 
 Application backend and database tool, also by Google
@@ -59,17 +61,17 @@ Provides:
 - Authentication
 - Crash reporting
 
-### jQuery
+#### jQuery
 https://jquery.com/
 
 Multi-purpose JavaScript library - used for various functions
 
-### Fuse.js
+#### Fuse.js
 https://fusejs.io/
 
 JavaScript fuzzy string search library used in the help search and action button. See `src/js/help_search.js`.
 
-## Snippets
+### Snippets
 
 Short sections of code and templates used in the project.
 
@@ -83,6 +85,25 @@ Short sections of code and templates used in the project.
  - Various Firebase / Cloud Firestore: https://github.com/firebase/snippets-web/blob/cec7d56a58076a5fb6a1fb1de2d65f617d617113/firestore/test.firestore.js
  - Firebase storage ID generation: https://gist.github.com/mikelehen/3596a30bd69384624c11
  - Material Design Lite article template (Apache License): https://github.com/google/material-design-lite/tree/mdl-1.x/templates/article
+
+### Other Software Used
+
+Software not included in the program itself, but used to create it.
+
+#### Atom
+https://atom.io/
+
+The best text editor ever, with full customization, incredible package manager, autofilling snippets, Git integration, and much more.
+
+#### Google Chrome
+https://www.google.com/chrome/
+
+Web browser used for most testing and foundation for Electron.
+
+#### Git
+https://git-scm.com/
+
+Version control & file tracking protocol.
 
 ## Database
 
@@ -109,22 +130,3 @@ Short sections of code and templates used in the project.
       };
       ```
  - Cloud Firestore location: nam5 (us-central)
-
-## Other Software Used
-
-Software not included in the program itself, but used to create it.
-
-### Atom
-https://atom.io/
-
-The best text editor ever, with full customization, incredible package manager, autofilling snippets, Git integration, and much more.
-
-### Google Chrome
-https://www.google.com/chrome/
-
-Web browser used for most testing and foundation for Electron.
-
-### Git
-https://git-scm.com/
-
-Version control & file tracking.
