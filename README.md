@@ -45,11 +45,11 @@
 
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
-The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
+The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening `index.html` in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used [Electron.js](https://electronjs.org/) to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
 
 ## Installation
 
-The program is standalone and portable; it is not installed in a traditional sense in that no files are created or modified outside of the project folder when the program is used and the entire thing is self-contained. The only caveat to this is the external Firebase database described below. Isolating this database and the authentication system is important for security purposes. It is portable in that the project folder can easily be moved to almost any computer and easily run there.
+The program is [standalone](https://en.wikipedia.org/wiki/Standalone_software) and [portable](https://en.wikipedia.org/wiki/Portable_application); it is not installed in a traditional sense in that no files are created or modified outside of the project folder when the program is used and the entire thing is self-contained. The only caveat to this is the external [Firebase](https://firebase.google.com/) database described below. Isolating this database and the authentication system is important for security purposes. It is portable in that the project folder can easily be moved to almost any computer and easily run there.
 
 There are two main options for getting the software ready to use:
 
@@ -63,8 +63,8 @@ There are two main options for getting the software ready to use:
 ### Build (advanced)
 
 1. Download or clone this repository
-2. Install Node.js
-3. Install NPM (Node Package Manager)
+2. Install [Node.js](https://nodejs.org/en/)
+3. Install [NPM](https://www.npmjs.com/) (Node Package Manager)
 4. Open a command prompt
 5. `CD` to the directory of the repository (/src recommended)
 6. Run `npm install` to install dependencies and packages
@@ -88,7 +88,7 @@ There are two main options for getting the software ready to use:
 ### Security
 
 ### Portability
-This program can be run locally as described above, uploaded to a web server and used as a website, or converted to a desktop app with minimal effort using a tool like Electron. This makes it easy to use regardless of where the user is and eliminates the need for dependencies on other software packages; everything that is needed can be loaded dynamically.
+This program can be run locally as described above, uploaded to a web server and used as a website, ~~or converted to a desktop app with minimal effort using a tool like Electron~~ or run as a desktop app using [Electron.js](https://electronjs.org/). This makes it easy to use regardless of where the user is and eliminates the need for dependencies on other software packages; everything that is needed can be loaded dynamically.
 
 ## Languages
 
