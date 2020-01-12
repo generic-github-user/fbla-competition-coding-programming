@@ -6,19 +6,24 @@
 
 1. [fbla-competition-coding-programming](#fbla-competition-coding-programming)
 	1. [Table of Contents](#table-of-contents)
-	2. [Why a web app?](#why-a-web-app)
+	2. [Installation](#installation)
+		1. [As a web app (easiest)](#as-a-web-app-easiest)
+		2. [As a desktop app (standalone)](#as-a-desktop-app-standalone)
+		3. [Build (advanced)](#build-advanced)
+	3. [Usage](#usage)
+	4. [Why a web app?](#why-a-web-app)
 		1. [Security](#security)
 		2. [Portability](#portability)
-	3. [Languages](#languages)
+	5. [Languages](#languages)
 		1. [HTML](#html)
 		2. [CSS](#css)
 		3. [JavaScript](#javascript)
 		4. [JSON](#json)
-	4. [Files](#files)
+	6. [Files](#files)
 		1. [Pages [HTML]](#pages-html)
 		2. [Scripts [JavaScript]](#scripts-javascript)
 		3. [Other](#other)
-	5. [Acknowledgements](#acknowledgements)
+	7. [Acknowledgements](#acknowledgements)
 		1. [Libraries](#libraries)
 			1. [Electron](#electron)
 			2. [Electron Packager](#electron-packager)
@@ -33,7 +38,7 @@
 				2. [line-count](#line-count)
 			2. [Google Chrome](#google-chrome)
 			3. [Git](#git)
-	6. [Database](#database)
+	8. [Database](#database)
 
 <!-- /TOC -->
 
@@ -41,6 +46,32 @@
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
 The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
+
+## Installation
+
+There are two main options for getting the software ready to use:
+
+### As a web app (easiest)
+
+ 1. Download or clone this repository
+ 2. Open `src/index.html` using Google Chrome (recommended), Firefox, or a similar web browser
+
+### As a desktop app (standalone)
+
+### Build (advanced)
+
+1. Download or clone this repository
+2. Install Node.js
+3. Install NPM (Node Package Manager)
+4. Open a command prompt
+5. `CD` to the directory of the repository (/src recommended)
+6. Run `npm install` to install dependencies and packagges
+7. Run `npm start` to prepare the application using Electron.js (see below) and run it in a temporary window
+8. Close when finished (alternatively use CTRL+C in the command window to end the process)
+
+## Usage
+
+
 
 ## Why a web app?
 
