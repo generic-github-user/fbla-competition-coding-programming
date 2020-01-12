@@ -65,7 +65,13 @@ db.collection('students')
 
             // var student_data = querySnapshot.map(doc => doc.data());
             var student_data = [];
-            querySnapshot.forEach(doc => student_data.push(doc.data()));
+            //merge id in
+            querySnapshot.forEach(doc => student_data.push({
+                  ...doc.data(),
+                  ...{
+                        'id': doc.id
+                  }
+            }));
 
             // Create a new fuse search query from the student data
             fuse_students = new Fuse(student_data, search_options);
