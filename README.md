@@ -49,6 +49,8 @@ The application is built as a [web app](https://en.wikipedia.org/wiki/Web_applic
 
 ## Installation
 
+The program is standalone and portable; it is not installed in a traditional sense in that no files are created or modified outside of the project folder when the program is used and the entire thing is self-contained. The only caveat to this is the external Firebase database described below. Isolating this database and the authentication system is important for security purposes. It is portable in that the project folder can easily be moved to almost any computer and easily run there.
+
 There are two main options for getting the software ready to use:
 
 ### As a web app (easiest)
