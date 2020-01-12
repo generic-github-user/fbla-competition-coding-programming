@@ -60,6 +60,14 @@ There are two main options for getting the software ready to use:
 
 ### As a desktop app (standalone)
 
+Instructions for Windows:
+
+1. Download or clone this repository
+2. Locate the application folder; this folder has an executable version of the program ready to run. Currently it is titled `fbla-app-win32-x64` and can be found in `/src`.
+3. Find the executable file in the application folder and run it
+
+Additionally, advanced users may want to use Electron.js to build the standalone version of the app themselves:
+
 ### Build (advanced)
 
 1. Download or clone this repository
