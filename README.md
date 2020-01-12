@@ -66,8 +66,12 @@ There are two main options for getting the software ready to use:
 4. Open a command prompt
 5. `CD` to the directory of the repository (/src recommended)
 6. Run `npm install` to install dependencies and packagges
+<<<<<<< HEAD
 7. Run `npm start` to prepare the application using Electron.js (see below) and run it in a temporary window
 8. Close when finished (alternatively use CTRL+C in the command window to end the process)
+=======
+7. Run `npm start` to prepare the application using Electron.js (see below) and run it in a temporary window 
+>>>>>>> 2a4f4c847716bdc55bfc0066298d0996833b9cdc
 
 ## Usage
 
