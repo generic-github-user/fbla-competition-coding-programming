@@ -6,3 +6,7 @@ dialog {
       width: 50% !important;
       max-width: 500px;
 }
+
+button.danger {
+      background-color: #D00 !important;
+}

@@ -12,6 +12,7 @@
       <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel="stylesheet" href="./css/student.css" />
+      <link rel="stylesheet" href="./css/stylesheet.css" />
 </head>
 
 <body>
@@ -32,38 +33,45 @@
                   </nav>
             </div>
             <main class="mdl-layout__content">
-                  <div id="student-info" class="mdl-shadow--4dp">
-                        <h3 id="student-name" class="mdl-title"></h3>
-                        <form action="#">
-                              <!-- Name -->
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="student-name">
-                                    <label class="mdl-textfield__label" for="student-name">Name</label>
-                              </div>
-                              <!-- Number -->
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
-                                    <label class="mdl-textfield__label" for="student-number">Student Number</label>
-                                    <span class="mdl-textfield__error">Input must be a number</span>
-                              </div>
-                              <!-- Grade -->
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
-                                    <label class="mdl-textfield__label" for="student-grade">Grade</label>
-                                    <span class="mdl-textfield__error">Input must be a number</span>
-                              </div>
-                              <!-- Total hours -->
-                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
-                                    <label class="mdl-textfield__label" for="student-total_hours">Total Hours</label>
-                                    <span class="mdl-textfield__error">Input must be a number</span>
-                              </div>
-                        </form>
-                        <!-- Created -->
-                        <p id="student-created"></p>
-                        <p id="student-created-by"></p>
-                        <p id="student-updated"></p>
-                        <p id="student-updated-by"></p>
+                  <div id="left-column">
+                        <div id="student-info" class="mdl-shadow--4dp">
+                              <h3 id="student-name" class="mdl-title"></h3>
+                              <form action="#">
+                                    <!-- Name -->
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" id="student-name">
+                                          <label class="mdl-textfield__label" for="student-name">Name</label>
+                                    </div>
+                                    <!-- Number -->
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
+                                          <label class="mdl-textfield__label" for="student-number">Student Number</label>
+                                          <span class="mdl-textfield__error">Input must be a number</span>
+                                    </div>
+                                    <!-- Grade -->
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
+                                          <label class="mdl-textfield__label" for="student-grade">Grade</label>
+                                          <span class="mdl-textfield__error">Input must be a number</span>
+                                    </div>
+                                    <!-- Total hours -->
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
+                                          <label class="mdl-textfield__label" for="student-total_hours">Total Hours</label>
+                                          <span class="mdl-textfield__error">Input must be a number</span>
+                                    </div>
+                              </form>
+                              <!-- Created -->
+                              <p id="student-created"></p>
+                              <p id="student-created-by"></p>
+                              <p id="student-updated"></p>
+                              <p id="student-updated-by"></p>
+                        </div>
+                        <div id="student-actions" class="mdl-shadow--4dp">
+                              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent danger" id="delete-student">
+                                    Delete Student
+                              </button>
+                        </div>
                   </div>
                   <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp service-list">
                         <thead>

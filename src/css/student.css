@@ -6,11 +6,15 @@
       margin: 0px;
 }
 
-#student-info {
+#left-column {
       float: left;
       width: 32%;
       margin: 40px 2%;
+}
+
+div#student-info, div#student-actions {
       padding: 20px;
+      margin-bottom: 30px;
 }
 
 #student-info>* {

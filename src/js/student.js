@@ -1,7 +1,7 @@
 student_id = new URL(window.location.href).searchParams.get('student_id');
 
 function get_name(user_id) {
-      return 'Phil';
+      return user_id;
 }
 
 // Get student data from database
@@ -42,4 +42,13 @@ firebase.firestore().collection('students').doc(student_id).get().then(function(
       // Log error
       console.log("Error getting document:", error);
       snackbar('Error; could not load student information.');
+});
+
+$('#delete-student').click(function() {
+      firebase.firestore().collection("students").doc(student_id).delete().then(function() {
+            console.log("Document successfully deleted!");
+            window.location.href = './dashboard.html';
+      }).catch(function(error) {
+            console.error("Error removing document: ", error);
+      });
 });
