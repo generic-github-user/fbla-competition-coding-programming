@@ -62,9 +62,12 @@ Provides:
 ### jQuery
 https://jquery.com/
 
-Multi-purpose JavaScript library
+Multi-purpose JavaScript library - used for various functions
 
-Used for various functions
+### Fuse.js
+https://fusejs.io/
+
+JavaScript fuzzy string search library used in the help search and action button. See `src/js/help_search.js`.
 
 ## Snippets
 
