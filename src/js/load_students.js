@@ -1,28 +1,35 @@
 // Load list of students into dashboard
 
+// Fuzzy search options
 var search_options = {
       shouldSort: true,
-      threshold: 0.6,
+      threshold: 0.4,
       location: 0,
       distance: 100,
       maxPatternLength: 32,
       minMatchCharLength: 1,
+      // Search student name and number
       keys: [
             'name',
             'number'
       ]
 };
 
+// Update table of students based on search results
 function update_results(student_data) {
+      // Get search term
       var search_string = $('#student-search').val();
+      // If the user has entered a search term, search for it
       if (search_string != undefined && search_string.length > 0) {
             var results = fuse_students.search(search_string);
-      } else {
+      }
+      // Otherwise, use all data
+      else {
             var results = student_data;
       }
 
       $('#student-list').empty();
-      console.log(search_string)
+      console.log('Searching for ' + search_string)
 
       // Use Firebase search function OR
       // Create search function inside of callback OR
@@ -30,8 +37,6 @@ function update_results(student_data) {
 
       // If --> all results or ?
       results.forEach(function(doc) {
-            // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc);
             data = doc;
 
             // Load data as row in table
@@ -62,10 +67,13 @@ db.collection('students')
             var student_data = [];
             querySnapshot.forEach(doc => student_data.push(doc.data()));
 
+            // Create a new fuse search query from the student data
             fuse_students = new Fuse(student_data, search_options);
+            // Update results when search query is updated
             $('#student-search').on('input', () => {
                   update_results(student_data);
             });
+            // Update on start (once data is loaded; we're still in the .then())
             update_results(student_data);
       })
       // Catch errors
