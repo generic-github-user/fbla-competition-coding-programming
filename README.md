@@ -14,7 +14,10 @@
 		- [CSS](#css)
 		- [JavaScript](#javascript)
 		- [JSON](#json)
-	- [Pages](#pages)
+	- [Files](#files)
+		- [Pages [HTML]](#pages-html)
+		- [Scripts [JavaScript]](#scripts-javascript)
+		- [Other](#other)
 	- [Acknowledgements](#acknowledgements)
 		- [Libraries](#libraries)
 			- [Electron](#electron)
@@ -62,11 +65,23 @@ Scripting language used for dynamic content and interactive functionality.
 ### JSON
 A data serialization language used in Firebase databases.
 
-## Pages
+## Files
+
+### Pages [HTML]
 
  - Home (index.html) - main and default page
  - Login (login.html) - used to log into the application
  - Register (register.html) - account creation page
+ - Dashboard (dashboard.html) - main hub for viewing data and performing actions
+ - Student (student.html) - view detailed information about a specific student and edit, print, export, or delete student information
+ - Help pages (adding_students.html, etc.)
+
+### Scripts [JavaScript]
+
+### Other
+
+ - node_modules
+ - bin
 
 ## Acknowledgements
 
