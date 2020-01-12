@@ -10,3 +10,7 @@ dialog {
 button.danger {
       background-color: #D00 !important;
 }
+
+a {
+      text-decoration: none;
+}

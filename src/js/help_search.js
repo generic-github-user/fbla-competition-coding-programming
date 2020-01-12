@@ -34,6 +34,6 @@ $('#help-search-input').on('input', function() {
       for (var i = 0; i < results.length; i++) {
             // var url = '//docs/' + results[i].link + '.html';
             var url = window.origin + '/src/docs/' + results[i].link + '.html';
-            $('#help-search-results').append($('<li class="mdl-list__item mdl-list__item--three-line"><span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-avatar">person</i><span><a href="' + url + '">' + results[i].title + '</span><span class="mdl-list__item-text-body">test</span></li>'))
+            $('#help-search-results').append($('<li class="mdl-list__item mdl-list__item--three-line"><span class="mdl-list__item-primary-content">\<i class="material-icons mdl-list__item-avatar">person</i><span><a href="' + url + '">' + results[i].title + '</span><span class="mdl-list__item-text-body">Keywords: ' + results[i].keywords.split(' ').join(', ') + '</span></li>'))
       }
 });
