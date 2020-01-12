@@ -64,6 +64,8 @@ https://jquery.com/
 
 Multi-purpose JavaScript library
 
+Used for various functions
+
 ## Snippets
 
 Short sections of code and templates used in the project.
@@ -82,11 +84,27 @@ Short sections of code and templates used in the project.
 ## Database
 
  - Uses Cloud Firestore database included with Firebase by Google: https://firebase.google.com/
+ - Could easily be ported to a local JSON file or a different database service
+ - Firebase projects can be transferred between users
  - Database Structure
-   - /students
-     - /name
-     - /grade
-     - /hours
+   - `/students` - collection containing a document for each student in the system
+     - `/name` - student's name
+     - `/grade` - student's grade
+     - `/total_hours` - total volunteer hours for a given student
+     - `/number` - student number
+ - Example (from `src/js/write_student_info.js`):
+      ```js
+      var student_data = {
+            name: name,
+            number: number,
+            grade: grade,
+            total_hours: hours,
+            updated: new Date().getTime(),
+            updated_by: firebase.auth().currentUser.uid,
+            created: new Date().getTime(),
+            created_by: firebase.auth().currentUser.uid
+      };
+      ```
  - Cloud Firestore location: nam5 (us-central)
 
 ## Other Software Used
