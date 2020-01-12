@@ -10,6 +10,26 @@ const path = require('path')
 let mainWindow
 
 function createWindow() {
+      // const WEB_FOLDER = 'src';
+      // const PROTOCOL = 'file';
+      //
+      // electron.protocol.interceptFileProtocol(PROTOCOL, (request, callback) => {
+      //       // // Strip protocol
+      //       let url = request.url.substr(PROTOCOL.length + 1);
+      //
+      //       // Build complete path for node require function
+      //       url = path.join(__dirname, WEB_FOLDER, url);
+      //
+      //       // Replace backslashes by forward slashes (windows)
+      //       // url = url.replace(/\\/g, '/');
+      //       url = path.normalize(url);
+      //
+      //       console.log(url);
+      //       callback({
+      //             path: url
+      //       });
+      // });
+
       // Create the browser window.
       browser_info = {
             width: 1280,
