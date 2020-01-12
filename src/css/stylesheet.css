@@ -11,6 +11,10 @@ button.danger {
       background-color: #D00 !important;
 }
 
+i.danger {
+      color: #D00;
+}
+
 a {
       text-decoration: none;
 }

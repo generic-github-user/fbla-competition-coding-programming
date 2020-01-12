@@ -8,6 +8,11 @@ function auth_change() {
       $('#profile-info span.mdl-chip__text').text('Logged in as ' + email);
 }
 
+function log_out() {
+      firebase.auth().signOut();
+}
+$('button#logout-button').click(log_out);
+
 
 db = firebase.firestore();
 firebase.auth().onAuthStateChanged(auth_change);

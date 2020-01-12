@@ -16,7 +16,7 @@ $('button#log-in').click(function() {
       $('input#password').val('');
 
       // Redirect to home page
-      window.location.replace("./index.html");
+      // window.location.href = './dashboard.html';
 });
 
 function loggedin() {
