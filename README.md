@@ -1,4 +1,40 @@
 # fbla-competition-coding-programming
+
+## Table of Contents
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [fbla-competition-coding-programming](#fbla-competition-coding-programming)
+	- [Table of Contents](#table-of-contents)
+	- [Why a web app?](#why-a-web-app)
+		- [Security](#security)
+		- [Portability](#portability)
+	- [Languages](#languages)
+		- [HTML](#html)
+		- [CSS](#css)
+		- [JavaScript](#javascript)
+		- [JSON](#json)
+	- [Pages](#pages)
+	- [Acknowledgements](#acknowledgements)
+		- [Libraries](#libraries)
+			- [Electron](#electron)
+			- [Electron Packager](#electron-packager)
+			- [Material Design Lite](#material-design-lite)
+			- [Firebase](#firebase)
+			- [jQuery](#jquery)
+			- [Fuse.js](#fusejs)
+		- [Snippets](#snippets)
+		- [Other Software Used](#other-software-used)
+			- [Atom](#atom)
+				- [markdown-toc](#markdown-toc)
+				- [line-count](#line-count)
+			- [Google Chrome](#google-chrome)
+			- [Git](#git)
+	- [Database](#database)
+
+<!-- /TOC -->
+
+
  Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
 The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
@@ -10,7 +46,7 @@ The application is built as a [web app](https://en.wikipedia.org/wiki/Web_applic
 ### Portability
 This program can be run locally as described above, uploaded to a web server and used as a website, or converted to a desktop app with minimal effort using a tool like Electron. This makes it easy to use regardless of where the user is and eliminates the need for dependencies on other software packages; everything that is needed can be loaded dynamically.
 
-## Programming Languages
+## Languages
 
 This tool is coded as a web application and uses the following programming and markup languages to function.
 
@@ -94,6 +130,16 @@ Software not included in the program itself, but used to create it.
 https://atom.io/
 
 The best text editor ever, with full customization, incredible package manager, autofilling snippets, Git integration, and much more.
+
+##### markdown-toc
+https://github.com/nok/markdown-toc
+
+An Atom package (plugin) that allows for easy generation of table of contents.
+
+##### line-count
+https://atom.io/packages/line-count
+
+An Atom package for counting lines of code in a given project/repository.
 
 #### Google Chrome
 https://www.google.com/chrome/
