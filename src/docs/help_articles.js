@@ -23,6 +23,10 @@ help_articles = [{
       'link': 'finding_students',
       'keywords': 'search students find look locate'
 }, {
+      'title': 'How to view student information',
+      'link': 'viewing_students',
+      'keywords': 'student view information look details'
+}, {
       'title': 'How to create an account',
       'link': 'registering',
       'keywords': 'register create account make new signup join'
