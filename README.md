@@ -42,6 +42,31 @@
 
 The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening *index.html* in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used Electron.js to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
 
+## Installation
+
+There are two main options for getting the software ready to use:
+
+### As a web app (easiest)
+
+ 1. Download or clone this repository
+ 2. Open `src/index.html` using Google Chrome (recommended), Firefox, or a similar web browser
+
+### As a desktop app (standalone)
+
+### Build (advanced)
+
+1. Download or clone this repository
+2. Install Node.js
+3. Install NPM (Node Package Manager)
+4. Open a command prompt
+5. `CD` to the directory of the repository (/src recommended)
+6. Run `npm install` to install dependencies and packagges
+7. Run `npm start` to prepare the application using Electron.js (see below) and run it in a temporary window 
+
+## Usage
+
+
+
 ## Why a web app?
 
 ### Security
