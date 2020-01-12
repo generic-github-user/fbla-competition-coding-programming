@@ -74,7 +74,14 @@ There are two main options for getting the software ready to use:
 
 ## Usage
 
-
+1. Prepare for usage as described above
+2. Refer to help pages for information about specific tasks:
+	- Adding students
+	- Removing students
+	- Modifying student information
+	- Adding volunteer hours
+	- Viewing student volunteer activity
+	- Viewing a list of students
 
 ## Why a web app?
 
