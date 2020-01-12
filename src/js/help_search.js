@@ -18,7 +18,8 @@ var search_options = {
       minMatchCharLength: 1,
       keys: [
             'title',
-            'link'
+            'link',
+            'keywords'
       ]
 };
 
