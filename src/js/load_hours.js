@@ -1,4 +1,4 @@
-// Load list of hourss into dashboard
+// Load list of hours into dashboard
 
 // Fuzzy search options
 var search_options = {
@@ -20,7 +20,7 @@ function update_results(hours_data) {
       var search_string = $('#hours-search').val();
       // If the user has entered a search term, search for it
       if (search_string != undefined && search_string.length > 0) {
-            var results = fuse_hourss.search(search_string);
+            var results = fuse_hours.search(search_string);
       }
       // Otherwise, use all data
       else {
@@ -53,7 +53,7 @@ firebase.firestore().collection('hours').where('student', '==', student_id)
       // or focused_student_id ?
       // Sort by name
       .orderBy('date')
-      // Limit to 10 hourss
+      // Limit to 10 hours
       .limit(100)
       // Get values
       .get()
