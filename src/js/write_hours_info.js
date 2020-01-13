@@ -53,6 +53,28 @@ function write_student_info(selector, message, doc_id) {
                         };
                         // Display snackbar notification
                         notification.MaterialSnackbar.showSnackbar(snackbar_data);
+
+                        console.log('Calculating updated hours...')
+                        var hours_sum = 0;
+                        firebase.firestore().collection('hours')
+                              .where('student', '==', student_id)
+                              .limit(100)
+                              .get()
+                              .then(function(querySnapshot) {
+                                    console.log('Retrieved event information');
+                                    querySnapshot.forEach(doc => {
+                                          hours_sum += parseInt(doc.data().number);
+                                    });
+
+                                    firebase.firestore().collection('students').doc(student_id).update({
+                                          'total_hours': hours_sum
+                                    });
+                              })
+                              // Catch errors
+                              .catch(function(error) {
+                                    console.log("Error getting documents: ", error);
+                              });
+                        // firebase.firestore().collection('hours').doc(student_id)
                   })
                   // Catch errors and log to console
                   .catch(function(error) {

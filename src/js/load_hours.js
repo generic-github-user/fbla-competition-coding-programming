@@ -49,7 +49,8 @@ function update_results(hours_data) {
       });
 }
 
-firebase.firestore().collection('hours').where('student', '==', student_id)
+firebase.firestore().collection('hours')
+      .where('student', '==', student_id)
       // or focused_student_id ?
       // Sort by name
       .orderBy('date')
