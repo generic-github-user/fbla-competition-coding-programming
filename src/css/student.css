@@ -26,3 +26,10 @@ table.service-list {
       width: 60%;
       margin: 40px 2%;
 }
+
+button#add-hours {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+      z-index: 10;
+}

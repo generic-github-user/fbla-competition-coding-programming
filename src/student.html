@@ -8,9 +8,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>View Student</title>
 
-      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css"> -->
+      <!-- <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script> -->
+
+      <!-- <script src="./lib/mdl/material.min.js"></script> -->
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
+      <!-- Material Design Lite -->
+      <link rel="stylesheet" href="./lib/mdl/material.min.css">
+      <script src="./lib/mdl/material.min.js"></script>
+      <link rel="stylesheet" href="./lib/mdl/icon.css">
+
       <link rel="stylesheet" href="./css/student.css" />
       <link rel="stylesheet" href="./css/stylesheet.css" />
 </head>
@@ -77,8 +85,8 @@
                   <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp service-list">
                         <thead>
                               <tr>
-                                    <th class="mdl-data-table__cell--non-numeric">Hours</th>
-                                    <th>Category</th>
+                                    <th class="mdl-data-table__cell--non-numeric">Description</th>
+                                    <th>Hours</th>
                                     <th>Date</th>
                               </tr>
                         </thead>
@@ -86,7 +94,50 @@
 
                         </tbody>
                   </table>
+
+                  <!-- Add hours dialog box -->
+                  <dialog class="mdl-dialog add-hours">
+                        <!-- Title -->
+                        <h4 class="mdl-dialog__title">Add Service Hours</h4>
+                        <div class="mdl-dialog__content">
+                              <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" id="hours-description">
+                                          <label class="mdl-textfield__label" for="hours-description">Description</label>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hours-number">
+                                          <label class="mdl-textfield__label" for="hours-number">Number of hours</label>
+                                          <span class="mdl-textfield__error">Input must be a number</span>
+                                    </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col">
+                                          <input class="mdl-textfield__input" type="date" id="hours-date">
+                                          <label class="mdl-textfield__label" for="hours-date">Date</label>
+                                    </div>
+                              </form>
+                        </div>
+                        <!-- Action buttons -->
+                        <div class="mdl-dialog__actions">
+                              <!-- Cancel -->
+                              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">Cancel</button>
+                              <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">Add</button>
+                        </div>
+                  </dialog>
             </main>
+
+            <!-- Add hours button -->
+            <button id="add-hours" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
+                  <i class="material-icons">add</i>
+            </button>
+            <!-- Tooltip -->
+            <div class="mdl-tooltip" data-mdl-for="add-hours">
+                  Add Volunteer Hours
+            </div>
+
+            <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+            </div>
       </div>
 
       <!-- Firebase -->
@@ -99,6 +150,10 @@
       <!-- JavaScript -->
       <script src="./lib/jquery/jquery-3.4.1.min.js"></script>
       <script src="./js/student.js" charset="utf-8"></script>
+      <script src="./js/generate_id.js" charset="utf-8"></script>
+      <script src="./js/clear_fields.js" charset="utf-8"></script>
+      <script src="./js/write_hours_info.js" charset="utf-8"></script>
+      <script src="./js/add_hours.js" charset="utf-8"></script>
 </body>
 
 </html>
