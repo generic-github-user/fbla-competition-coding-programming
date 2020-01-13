@@ -11,6 +11,7 @@ function write_student_info(selector, message, doc_id) {
 
       // Volunteer event (hours) data from input form
       var hours_data = {
+            student: student_id,
             description: description,
             number: number,
             date: date,
