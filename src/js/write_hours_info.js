@@ -45,7 +45,7 @@ function write_student_info(selector, message, doc_id) {
                               message: message + description + ' [' + number + ' hours]',
                               // Callback function to view student when link is clicked
                               actionHandler: function(event) {
-                                    view_student(doc_id);
+                                    view_hours(doc_id);
                               },
                               actionText: 'View',
                               // Timeout before hiding notification
@@ -56,16 +56,23 @@ function write_student_info(selector, message, doc_id) {
 
                         console.log('Calculating updated hours...')
                         var hours_sum = 0;
+                        // Get all hours belonging to this student
                         firebase.firestore().collection('hours')
+                              // Student ID must match
                               .where('student', '==', student_id)
+                              // Limit to 100
                               .limit(100)
+                              // Get data
                               .get()
                               .then(function(querySnapshot) {
                                     console.log('Retrieved event information');
+                                    // Loop through each volunteer event record and add hours to running total
                                     querySnapshot.forEach(doc => {
+                                          // Convert string value to integer
                                           hours_sum += parseInt(doc.data().number);
                                     });
 
+                                    // Post hours value to student record
                                     firebase.firestore().collection('students').doc(student_id).update({
                                           'total_hours': hours_sum
                                     });
