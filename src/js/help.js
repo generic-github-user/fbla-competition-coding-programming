@@ -4,7 +4,7 @@ $(document).ready(function() {
       console.log(article_info)
 
       $('#help-title').text(article_info.title);
-      var path = topic + '.html';
+      var path = './docs/' + topic + '.html';
 
       // check if app is running inside electron
       // var userAgent = navigator.userAgent.toLowerCase();

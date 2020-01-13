@@ -40,7 +40,7 @@ $('#help-search-input').on('input', function() {
             // var url = '//docs/' + results[i].link + '.html';
             // var url = window.origin + '/src/docs/' + results[i].link + '.html';
             // var url = '/src/docs/help.html?topic=' + results[i].link;
-            var url = './docs/help.html?topic=' + results[i].link;
+            var url = 'help.html?topic=' + results[i].link;
 
             // var userAgent = navigator.userAgent.toLowerCase();
             // if (userAgent.indexOf(' electron/') > -1) {
