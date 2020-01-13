@@ -56,7 +56,7 @@
                   <!-- Tabs -->
                   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
                         <a href="#students" class="mdl-layout__tab is-active">Students</a>
-                        <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+                        <a href="#service-tab" class="mdl-layout__tab">Service</a>
                         <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
                   </div>
             </header>
@@ -238,9 +238,34 @@
 
 
                   </section>
-                  <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                  <section class="mdl-layout__tab-panel" id="service-tab">
                         <div class="page-content">
-                              <!-- Your content goes here -->
+                              <!-- Hours search box -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                                    <label class="mdl-button mdl-js-button mdl-button--icon" for="hours-search" id="hours-search-icon">
+                                          <i class="material-icons">search</i>
+                                    </label>
+                                    <div class="mdl-textfield__expandable-holder">
+                                          <input class="mdl-textfield__input" type="text" id="hours-search">
+                                          <label class="mdl-textfield__label" for="hours-search">Search...</label>
+                                    </div>
+                              </div>
+                              <!-- Tooltip -->
+                              <span class="mdl-tooltip" for="hours-search-icon">Search for volunteer events</span>
+
+
+                              <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp service-list">
+                                    <thead>
+                                          <tr>
+                                                <th class="mdl-data-table__cell--non-numeric">Description</th>
+                                                <th>Hours</th>
+                                                <th>Date</th>
+                                          </tr>
+                                    </thead>
+                                    <tbody id="service-list">
+
+                                    </tbody>
+                              </table>
                         </div>
                   </section>
                   <section class="mdl-layout__tab-panel" id="fixed-tab-3">
@@ -281,6 +306,7 @@
       <script src="./js/add_student.js" charset="utf-8"></script>
       <script src="./js/view_student.js" charset="utf-8"></script>
       <script src="./js/load_students.js" charset="utf-8"></script>
+      <script src="./js/load_all_hours.js" charset="utf-8"></script>
 </body>
 
 </html>
