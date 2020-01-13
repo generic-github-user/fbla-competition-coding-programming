@@ -33,5 +33,5 @@ help_articles = [{
 }, {
       'title': 'How to edit student information',
       'link': 'editing_students',
-      'keywords': 'edit modify students change alter'
+      'keywords': 'edit modify students change alter update'
 }];
