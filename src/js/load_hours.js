@@ -27,7 +27,7 @@ function update_results(hours_data) {
             var results = hours_data;
       }
 
-      $('#hours-list').empty();
+      $('#service-list').empty();
       console.log('Searching for ' + search_string)
 
       // Use Firebase search function OR
