@@ -15,7 +15,7 @@ var search_options = {
 };
 
 // Update table of events based on search results
-function update_results(hours_data) {
+function update_service_results(hours_data) {
       // Get search term
       var search_string = $('#hours-search').val();
       // If the user has entered a search term, search for it
@@ -75,10 +75,10 @@ firebase.firestore().collection('hours')
             fuse_hours = new Fuse(hours_data, search_options);
             // Update results when search query is updated
             $('#hours-search').on('input', () => {
-                  update_results(hours_data);
+                  update_service_results(hours_data);
             });
             // Update on start (once data is loaded; we're still in the .then())
-            update_results(hours_data);
+            update_service_results(hours_data);
       })
       // Catch errors
       .catch(function(error) {
