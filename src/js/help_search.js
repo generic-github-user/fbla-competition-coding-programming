@@ -8,6 +8,7 @@ if (!help_dialog.showModal) {
       dialogPolyfill.registerDialog(help_dialog);
 }
 $('#help-button').click(function() {
+      clear_fields($('dialog#help-search'));
       help_dialog.showModal();
 });
 help_dialog.querySelector('.close').addEventListener('click', function() {
