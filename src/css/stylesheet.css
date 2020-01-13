@@ -5,8 +5,13 @@ button, .mdl-layout__tab {
 dialog {
       width: 50% !important;
       max-width: 500px;
+      max-height: 500px;
+      overflow: scroll;
 }
 
+/* dialog button {
+      position: relative;
+} */
 button.danger {
       background-color: #D00 !important;
 }
