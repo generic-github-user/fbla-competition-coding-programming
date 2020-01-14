@@ -15,6 +15,7 @@ var search_options = {
 };
 
 function add_row(data, name) {
+      console.log(name)
       // Load data as row in table
       hours_row = $('<tr id="' + data.id + '"><td class="mdl-data-table__cell--non-numeric">' + name + '</td><td class="mdl-data-table__cell--non-numeric">' + data.description + '</td><td>' + data.number + '</td><td>' + data.date + '</td></tr>');
       // Bind event listener for click to display hours info dialog box
@@ -114,10 +115,7 @@ function update_service_results(hours_data) {
                         .then(
                               function(student_doc) {
                                     if (student_doc.exists) {
-                                          var name = student_doc.data().name;
-
-                                          // student_names[data.student] = name;
-                                          add_row(hours_doc, name || 'Unknown');
+                                          add_row(hours_doc, student_doc.data().name);
                                     } else {
                                           console.log("No such document!");
                                     }
@@ -127,10 +125,9 @@ function update_service_results(hours_data) {
                                     console.log("Error getting document");
                               }
                         );
+            } else {
+                  add_row(hours_doc, 'Unknown');
             }
-            // else {
-            //       add_row(doc, data, 'Unknown');
-            // }
       });
 }
 
