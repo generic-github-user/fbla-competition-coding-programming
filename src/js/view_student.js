@@ -21,9 +21,6 @@ $('dialog#view-student button.view-report').click(function() {
 
 // Create a dialog to view an existing student
 function view_student(student_id) {
-      // Show dialog box
-      view_student_dialog.showModal();
-
       // Get student data from database
       db.collection('students').doc(student_id).get().then(function(doc) {
             // If student exists, load
@@ -47,14 +44,19 @@ function view_student(student_id) {
                   }
                   // $('dialog#view-student input#student-number').val(data.number);
                   // $('dialog#view-student input#student-grade').val(data.grade);
+
+                  view_student_dialog.showModal();
             }
             // Otherwise, log error message to console
             else {
                   console.log("No such student");
+                  snackbar('Error; student does not exist.');
             }
       }).catch(function(error) {
             // Log error
             console.log("Error getting document:", error);
             snackbar('Error; could not load student information.');
       });
+
+      // Show dialog box
 }
