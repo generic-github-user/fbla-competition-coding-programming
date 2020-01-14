@@ -30,6 +30,7 @@ firebase.firestore().collection('students').doc(student_id).get().then(function(
             $('#student-created-by').text('Added by: ' + get_name(data.created_by));
             $('#student-updated').text('Updated: ' + new Date(data.updated));
             $('#student-updated-by').text('Updated most recently by: ' + get_name(data.updated_by));
+            $('#student-csa_category').text('Community Service Awards category: ' + data.csa_category);
 
             // $('dialog#view-student input#student-number').val(data.number);
             // $('dialog#view-student input#student-grade').val(data.grade);

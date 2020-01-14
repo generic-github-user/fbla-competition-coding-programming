@@ -15,6 +15,16 @@ function write_student_info(selector, message, doc_id) {
       // Error is thrown if method name (.add) is included in write method
       // i.e. we cannot do firebase.firestore().collection("students").add(data)
 
+      var CSA = 'n/a';
+      var hours_int = parseInt(hours);
+      if (hours_int >= 500) {
+            CSA = 'CSA Achievement';
+      } else if (hours_int >= 200) {
+            CSA = 'CSA Service';
+      } else if (hours_int >= 50) {
+            CSA = 'CSA Community';
+      }
+
       // Student data from input form
       var student_data = {
             name: name,
@@ -22,7 +32,8 @@ function write_student_info(selector, message, doc_id) {
             grade: grade,
             total_hours: hours,
             updated: new Date().getTime(),
-            updated_by: firebase.auth().currentUser.uid
+            updated_by: firebase.auth().currentUser.uid,
+            csa_category: CSA
       };
 
       // Set data at ID doc_id - create document if it does not exist

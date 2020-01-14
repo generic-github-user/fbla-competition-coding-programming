@@ -40,7 +40,7 @@ function update_results(student_data) {
             data = doc;
 
             // Load data as row in table
-            student_row = $('<tr id="' + doc.id + '"><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td><td>' + data.total_hours + '</td></tr>');
+            student_row = $('<tr id="' + doc.id + '"><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td><td>' + data.total_hours + '</td><td>' + data.csa_category + '</td></tr>');
             // Bind event listener for click to display student info dialog box
             student_row.click(() => {
                   view_student(doc.id);
