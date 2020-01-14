@@ -14,9 +14,9 @@ var search_options = {
       ]
 };
 
-function add_row(doc, data, name) {
+function add_row(data, name) {
       // Load data as row in table
-      hours_row = $('<tr id="' + doc.id + '"><td class="mdl-data-table__cell--non-numeric">' + name + '</td><td class="mdl-data-table__cell--non-numeric">' + data.description + '</td><td>' + data.number + '</td><td>' + data.date + '</td></tr>');
+      hours_row = $('<tr id="' + data.id + '"><td class="mdl-data-table__cell--non-numeric">' + name + '</td><td class="mdl-data-table__cell--non-numeric">' + data.description + '</td><td>' + data.number + '</td><td>' + data.date + '</td></tr>');
       // Bind event listener for click to display hours info dialog box
       hours_row.click(() => {
             view_hours(doc.id);
@@ -24,6 +24,45 @@ function add_row(doc, data, name) {
 
       $('#service-list').append(hours_row);
 }
+
+// Superfund site
+// async function get_student_names(docs) {
+//       // return new Promise(resolve => {
+//       var student_names = {};
+//
+//       await docs.forEach(function(data) {
+//             if (!student_names[data.student]) {
+//                   if (data.student) {
+//                         firebase.firestore().collection('students').doc(data.student)
+//                               .get()
+//                               .then(
+//                                     function(student_doc) {
+//                                           if (student_doc.exists) {
+//                                                 console.log("Document data:", student_doc.data());
+//                                                 var name = student_doc.data().name;
+//
+//                                                 student_names[data.student] = name;
+//                                           } else {
+//                                                 console.log("No such document!");
+//                                           }
+//                                     })
+//                               .catch(
+//                                     function(error) {
+//                                           console.log("Error getting document:", error);
+//                                     }
+//                               );
+//                   }
+//                   // else {
+//                   //       name = 'Unknown';
+//                   // }
+//             }
+//       });
+//
+//       return student_names;
+//
+//       // resolve(student_names);
+//       // });
+// }
 
 // Update table of events based on search results
 function update_service_results(hours_data) {
@@ -45,43 +84,54 @@ function update_service_results(hours_data) {
       // Create search function inside of callback OR
       // Search and load results outside (after)
 
-      var student_names = {};
 
-      // If --> all results or ?
-      results.forEach(function(doc) {
-            data = doc;
+      // function asyncCall() {
+      //       // console.log('calling');
+      //       console.log(get_student_names(results));
+      //       // var names = await get_student_names(results);
+      //       // .then(function(names) {
+      //       console.log(names)
+      //
+      //       get_student_names.then(function(names) { // If --> all results or ?
+      //             results.forEach(function(doc) {
+      //                   data = doc;
+      //
+      //                   console.log(data.student)
+      //                   add_row(doc, data, names[data.student] || 'Unknown');
+      //             });
+      //       })
+      //       // });
+      //       // console.log(get_student_names(results))
+      // }
 
-            console.log(data.student)
-            // if (!student_names[data.student]) {
-            if (data.student) {
-                  firebase.firestore().collection('students').doc(data.student)
+
+      results.forEach(function(hours_doc) {
+            if (hours_doc.student) {
+                  firebase.firestore()
+                        .collection('students')
+                        .doc(hours_doc.student)
                         .get()
                         .then(
                               function(student_doc) {
                                     if (student_doc.exists) {
-                                          console.log("Document data:", student_doc.data());
                                           var name = student_doc.data().name;
-                                          student_names[data.student] = name;
 
-                                          add_row(doc, data, name);
+                                          // student_names[data.student] = name;
+                                          add_row(hours_doc, name || 'Unknown');
                                     } else {
                                           console.log("No such document!");
                                     }
                               })
                         .catch(
                               function(error) {
-                                    console.log("Error getting document:", error);
+                                    console.log("Error getting document");
                               }
                         );
-            } else {
-                  add_row(doc, data, 'Unknown');
             }
-            // }
             // else {
-            //       add_row(doc, data, student_names[data.student]);
+            //       add_row(doc, data, 'Unknown');
             // }
       });
-      console.log(student_names)
 }
 
 firebase.firestore().collection('hours')
