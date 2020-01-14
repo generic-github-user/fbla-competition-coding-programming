@@ -16,4 +16,4 @@ $('button#logout-button').click(log_out);
 
 db = firebase.firestore();
 firebase.auth().onAuthStateChanged(auth_change);
-window.setTimeout(auth_change, 1000);
+window.setTimeout(auth_change, 10000);
