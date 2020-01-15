@@ -152,6 +152,7 @@ firebase.firestore().collection('hours')
                         'id': doc.id
                   }
             }));
+            console.log(hours_data)
 
             // Create a new fuse search query from the volunteer event data
             fuse_hours = new Fuse(hours_data, search_options);

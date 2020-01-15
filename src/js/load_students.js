@@ -81,6 +81,7 @@ db.collection('students')
                         'id': doc.id
                   }
             }));
+            console.log(student_data)
 
             // Create a new fuse search query from the student data
             fuse_students = new Fuse(student_data, search_options);
