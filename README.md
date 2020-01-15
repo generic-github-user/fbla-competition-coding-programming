@@ -221,6 +221,33 @@ https://git-scm.com/
 
 Version control & file tracking protocol.
 
+#### Paint.NET
+https://www.getpaint.net/
+
+Mid-level image editing software used to create icon.
+
+#### ICO Convert
+https://icoconvert.com/
+
+For converting .png files or other image files to .ico files that can be used as the icon for Windows applications.
+
+#### rcedit
+https://github.com/electron/rcedit
+
+Used for setting properties of .exe files; icons, descriptions, version, and more.
+
+Example Windows commands for setting executable file properties (assuming `rcedit.exe` has been added to `%PATH%`):
+
+```
+rcedit service-tracker.exe --set-file-version "1.0.0"
+rcedit service-tracker.exe --set-product-version "1.0.0"
+rcedit "service-tracker.exe" --set-icon "./resources/app/icon/icon.ico"
+rcedit "service-tracker.exe" --set-version-string "FileDescription" "FBLA CSA Service Tracker"
+rcedit "service-tracker.exe" --set-version-string "ProductName" "FBLA CSA Service Tracker"
+rcedit "service-tracker.exe" --set-version-string "OriginalFilename" "service-tracker.exe"
+rcedit "service-tracker.exe" --set-version-string "Copyright" "Copyright (C) [Name] 2020."
+```
+
 ## Database
 
  - Uses Cloud Firestore database included with Firebase by Google: https://firebase.google.com/
