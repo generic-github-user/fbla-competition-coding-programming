@@ -120,6 +120,18 @@ A data serialization language used in Firebase databases.
 
 ## Files
 
+### Map
+
+A web map of the main files in the repository (excluding Git, Node.js-related files, etc.) - created using one of my other tools, [Tree](https://github.com/generic-github-user/Tree).
+
+*Colored based on file level:*
+
+![1](src/docs/img/tree/1.png)
+
+*Colored based on file type*
+
+![2](src/docs/img/tree/2.png)
+
 ### Pages [HTML]
 
  - Home (index.html) - main and default page
@@ -128,8 +140,6 @@ A data serialization language used in Firebase databases.
  - Dashboard (dashboard.html) - main hub for viewing data and performing actions
  - Student (student.html) - view detailed information about a specific student and edit, print, export, or delete student information
  - Help pages (adding_students.html, etc.)
-
-### Scripts [JavaScript]
 
 ### Other
 
