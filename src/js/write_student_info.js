@@ -3,13 +3,13 @@
 function write_student_info(selector, message, doc_id) {
       // Store student info in variables
       // Name
-      var name = $(selector + ' input#student-name').val();
+      var name = $(selector + ' input.student-name').val();
       // Student number
-      var number = $(selector + ' input#student-number').val();
+      var number = $(selector + ' input.student-number').val();
       // Grade
-      var grade = $(selector + ' input#student-grade').val();
+      var grade = $(selector + ' input.student-grade').val();
       // Hours
-      var hours = $(selector + ' input#student-total_hours').val();
+      var hours = $(selector + ' input.student-total_hours').val();
 
       // Upload to database using specified write method (i.e. firebase.firestore().collection("students").add for adding a new student)
       // Error is thrown if method name (.add) is included in write method

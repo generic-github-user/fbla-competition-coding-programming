@@ -36,7 +36,7 @@ function view_student(student_id) {
                   // Cycle through properties
                   for (var i = 0; i < properties.length; i++) {
                         // Get input box element
-                        var field = $('dialog#view-student input#student-' + properties[i]);
+                        var field = $('dialog#view-student input.student-' + properties[i]);
                         // Set value
                         field.val(data[properties[i]]);
                         // Mark input as filled
