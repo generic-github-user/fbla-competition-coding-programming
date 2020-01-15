@@ -5,7 +5,11 @@ button, .mdl-layout__tab {
 dialog {
       width: 50% !important;
       max-width: 500px;
-      max-height: 600px;
+      /* overflow-y: auto; */
+}
+
+dialog#help-search {
+      max-height: 500px;
       overflow: scroll;
 }
 
@@ -29,3 +33,7 @@ table th {
       font-size: 135% !important;
       font-weight: bold;
 }
+
+/* div#mdl-dialog__actions {
+      float: bottom;
+} */
