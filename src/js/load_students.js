@@ -46,6 +46,8 @@ function update_results(student_data) {
                   csa_icon = '<i class="material-icons">done_all</i>';
             } else if (data.csa_category == 'CSA Achievement') {
                   csa_icon = '<i class="material-icons">star_outline</i>';
+            } else if (data.csa_category == 'n/a') {
+                  csa_icon = '<i class="material-icons">radio_button_unchecked</i>';
             }
 
             // Load data as row in table
