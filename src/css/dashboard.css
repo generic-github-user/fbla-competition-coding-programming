@@ -52,3 +52,12 @@ table tr {
 div.page-content {
       padding: 50px;
 }
+
+.csa-category * {
+      display: inline-block;
+      vertical-align: middle;
+}
+
+.csa-category>i {
+      margin-right: 10px;
+}

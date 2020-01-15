@@ -39,8 +39,17 @@ function update_results(student_data) {
       results.forEach(function(doc) {
             data = doc;
 
+            var csa_icon = '';
+            if (data.csa_category == 'CSA Community') {
+                  csa_icon = '<i class="material-icons">done</i>';
+            } else if (data.csa_category == 'CSA Service') {
+                  csa_icon = '<i class="material-icons">done_all</i>';
+            } else if (data.csa_category == 'CSA Achievement') {
+                  csa_icon = '<i class="material-icons">star_outline</i>';
+            }
+
             // Load data as row in table
-            student_row = $('<tr id="' + doc.id + '"><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td><td>' + data.total_hours + '</td><td>' + data.csa_category + '</td></tr>');
+            student_row = $('<tr id="' + doc.id + '"><td class="mdl-data-table__cell--non-numeric">' + data.name + '</td><td>' + data.number + '</td><td>' + data.grade + '</td><td>' + data.total_hours + '</td><td><span class="csa-category">' + csa_icon + data.csa_category + '</span></td></tr>');
             // Bind event listener for click to display student info dialog box
             student_row.click(() => {
                   view_student(doc.id);
