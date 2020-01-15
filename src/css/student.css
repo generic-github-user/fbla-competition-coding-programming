@@ -33,3 +33,13 @@ button#add-hours {
       bottom: 50px;
       z-index: 10;
 }
+
+/* #home-button {
+      position: absolute;
+      display: block;
+      right: 50px;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 999;
+} */
