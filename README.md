@@ -1,4 +1,4 @@
-# fbla-competition-coding-programming
+# FBLA CSA Service Tracker
 
 ## Table of Contents
 
