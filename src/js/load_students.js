@@ -1,7 +1,7 @@
 // Load list of students into dashboard
 
 // Fuzzy search options
-var search_options = {
+var student_search_options = {
       shouldSort: true,
       threshold: 0.4,
       location: 0,
@@ -11,12 +11,16 @@ var search_options = {
       // Search student name and number
       keys: [
             'name',
-            'number'
+            'number',
+            'csa_category'
       ]
 };
 
 // Update table of students based on search results
 function update_results(student_data) {
+      // Create a new fuse search query from the student data
+      fuse_students = new Fuse(student_data, student_search_options);
+
       // Get search term
       var search_string = $('#student-search').val();
       // If the user has entered a search term, search for it
@@ -27,9 +31,11 @@ function update_results(student_data) {
       else {
             var results = student_data;
       }
+      console.log(search_string)
+      console.log(results)
 
       $('#student-list').empty();
-      console.log('Searching for ' + search_string)
+      console.log(student_data)
 
       // Use Firebase search function OR
       // Create search function inside of callback OR
@@ -83,10 +89,7 @@ db.collection('students')
                         'id': doc.id
                   }
             }));
-            console.log(student_data)
 
-            // Create a new fuse search query from the student data
-            fuse_students = new Fuse(student_data, search_options);
             // Update results when search query is updated
             $('#student-search').on('input', () => {
                   update_results(student_data);

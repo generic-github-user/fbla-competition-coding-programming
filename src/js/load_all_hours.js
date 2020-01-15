@@ -1,7 +1,7 @@
 // Load list of hours into dashboard
 
 // Fuzzy search options
-var search_options = {
+var hours_search_options = {
       shouldSort: true,
       threshold: 0.5,
       location: 0,
@@ -80,7 +80,6 @@ function update_service_results(hours_data) {
       }
 
       $('#service-list').empty();
-      console.log('Searching for ' + search_string)
 
       // Use Firebase search function OR
       // Create search function inside of callback OR
@@ -155,7 +154,7 @@ firebase.firestore().collection('hours')
             console.log(hours_data)
 
             // Create a new fuse search query from the volunteer event data
-            fuse_hours = new Fuse(hours_data, search_options);
+            fuse_hours = new Fuse(hours_data, hours_search_options);
             // Update results when search query is updated
             $('#hours-search').on('input', () => {
                   update_service_results(hours_data);
