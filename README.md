@@ -39,6 +39,9 @@
 				2. [line-count](#line-count)
 			2. [Google Chrome](#google-chrome)
 			3. [Git](#git)
+			4. [Paint.NET](#paintnet)
+			5. [ICO Convert](#ico-convert)
+			6. [rcedit](#rcedit)
 	8. [Database](#database)
 
 <!-- /TOC -->
