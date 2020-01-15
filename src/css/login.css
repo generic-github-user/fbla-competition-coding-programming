@@ -23,3 +23,17 @@ a {
       text-decoration: none;
       font-size: 125%;
 }
+
+h4 {
+      margin: 0px;
+      width: 100%;
+      display: inline;
+}
+
+img#icon {
+      width: 70px;
+      display: inline;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 30px;
+}
