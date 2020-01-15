@@ -28,6 +28,7 @@
 			1. [Electron](#electron)
 			2. [Electron Packager](#electron-packager)
 			3. [Material Design Lite](#material-design-lite)
+				1. [getmdl-select](#getmdl-select)
 			4. [Firebase](#firebase)
 			5. [jQuery](#jquery)
 			6. [Fuse.js](#fusejs)
@@ -150,6 +151,11 @@ Used to build and package the web app into an Electron executable runnable on an
 https://getmdl.io/
 
 Responsive web design framework by Google
+
+##### getmdl-select
+http://creativeit.github.io/getmdl-select/
+
+Dropdown input for Material Design Lite (not included by default).
 
 #### Firebase
 https://firebase.google.com/
