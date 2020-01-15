@@ -1,5 +1,7 @@
 # FBLA CSA Service Tracker
 
+My entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
+
 ## Table of Contents
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
@@ -46,10 +48,21 @@
 
 <!-- /TOC -->
 
-
- Entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
-
 The application is built as a [web app](https://en.wikipedia.org/wiki/Web_application) using HTML, JavaScript, and CSS and can therefore act as a website, runnable through the browser. Since it does not depend on a web server to run, it can be run standalone in the browser by opening `index.html` in web browsing software such as Google Chrome, Firefox, or Safari. ~~Future work could include wrapping the application into an [Electron](https://electronjs.org/) app so it can be used as a native desktop application.~~ I have used [Electron.js](https://electronjs.org/) to convert the web app into a standalone desktop app runnable as an executable file; the app continues to work the same way when run through a web browser.
+
+## Features
+
+ - Add students to database
+ - Edit student information easily
+ - Track student name, grade, number, and service hours
+ - Persistent data storage via Firebase
+ - Fully built out authentication system: logging in and out, account creation, etc.
+ - Interactive help page search menu
+ - Detailed information to track when and by whom students are created
+ - Add and edit volunteer events / service hours
+ - Automatically update total number of service hours and Community Service Awards category
+ - Easily view and interact with database of students
+ - Advanced search functionality for both students and service events
 
 ## Installation
 
