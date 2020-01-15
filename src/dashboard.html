@@ -131,164 +131,7 @@
                                           </tr> -->
                                     </tbody>
                               </table>
-
-
-                              <!-- Add student dialog box -->
-                              <dialog class="mdl-dialog add-student">
-                                    <!-- Title -->
-                                    <h4 class="mdl-dialog__title">Add Student</h4>
-                                    <div class="mdl-dialog__content">
-                                          <!-- <p>
-                                                Allowing us to collect data will let us get you the information you want faster.
-                                          </p> -->
-                                          <form action="#">
-                                                <!-- Name -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" id="student-name">
-                                                      <label class="mdl-textfield__label" for="student-name">Name</label>
-                                                </div>
-                                                <!-- Number -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
-                                                      <label class="mdl-textfield__label" for="student-number">Student Number</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div>
-                                                <!-- Grade -->
-                                                <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
-                                                      <label class="mdl-textfield__label" for="student-grade">Grade</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div> -->
-
-                                                <!-- Grade -->
-                                                <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--floating-label">
-                                                      <input type="text" value="" class="mdl-textfield__input" id="student-grade" readonly>
-                                                      <input type="hidden" value="" name="student-grade">
-                                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                                                      <label for="student-grade" class="mdl-textfield__label mdl-textfield--floating-label">Grade</label>
-                                                      <ul for="student-grade" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                                                            <li class="mdl-menu__item" data-val="9">9</li>
-                                                            <li class="mdl-menu__item" data-val="10">10</li>
-                                                            <li class="mdl-menu__item" data-val="11">11</li>
-                                                            <li class="mdl-menu__item" data-val="12">12</li>
-                                                      </ul>
-                                                </div>
-                                                <!-- Total hours -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" value="0" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
-                                                      <label class="mdl-textfield__label" for="student-total_hours">Hours</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div>
-                                          </form>
-                                    </div>
-
-                                    <!-- Action buttons -->
-                                    <div class="mdl-dialog__actions">
-                                          <!-- Cancel -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">
-                                                <i class="material-icons">cancel_presentation</i>
-                                                Cancel
-                                          </button>
-                                          <!-- Add student -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">
-                                                <i class="material-icons">library_add</i>
-                                                Add
-                                          </button>
-                                    </div>
-                              </dialog>
-
-                              <dialog class="mdl-dialog view-student" id="view-student">
-                                    <!-- Title -->
-                                    <h4 class="mdl-dialog__title student-name">Student</h4>
-                                    <h5 class="mdl-dialog__title">Student Overview</h5>
-                                    <div class="mdl-dialog__content">
-                                          <form action="#">
-                                                <!-- Name -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" id="student-name">
-                                                      <label class="mdl-textfield__label" for="student-name">Name</label>
-                                                </div>
-                                                <!-- Number -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
-                                                      <label class="mdl-textfield__label" for="student-number">Student Number</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div>
-                                                <!-- Grade -->
-                                                <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
-                                                      <label class="mdl-textfield__label" for="student-grade">Grade</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div> -->
-
-                                                <!-- Grade -->
-                                                <div class="mdl-textfield mdl-js-textfield getmdl-select">
-                                                      <input type="text" value="" class="mdl-textfield__input" id="student-grade" readonly>
-                                                      <input type="hidden" value="" name="student-grade">
-                                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                                                      <label for="student-grade" class="mdl-textfield__label">Grade</label>
-                                                      <ul for="student-grade" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                                                            <li class="mdl-menu__item" data-val="9">9</li>
-                                                            <li class="mdl-menu__item" data-val="10">10</li>
-                                                            <li class="mdl-menu__item" data-val="11">11</li>
-                                                            <li class="mdl-menu__item" data-val="12">12</li>
-                                                      </ul>
-                                                </div>
-                                                <!-- Total hours -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" value="0" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
-                                                      <label class="mdl-textfield__label" for="student-total_hours">Total Hours</label>
-                                                      <span class="mdl-textfield__error">Input must be a number</span>
-                                                </div>
-                                          </form>
-                                    </div>
-                                    <!-- Action buttons -->
-                                    <div class="mdl-dialog__actions">
-                                          <!-- Go to student report -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--primary view-report">
-                                                <i class="material-icons">view_quilt</i>
-                                                View Report
-                                          </button>
-                                          <!-- Update student information -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">
-                                                <i class="material-icons">compare_arrows</i>
-                                                Update
-                                          </button>
-                                          <!-- Close window (dialog) -->
-                                          <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">
-                                                <i class="material-icons">cancel_presentation</i>
-                                                Close
-                                          </button>
-                                    </div>
-                              </dialog>
-
-                              <dialog class="mdl-dialog" id="help-search">
-                                    <h4 class="mdl-dialog__title">What do you want to do?</h4>
-                                    <div class="mdl-dialog__content">
-                                          <form action="#">
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                      <input class="mdl-textfield__input" type="text" id="help-search-input">
-                                                      <label class="mdl-textfield__label" for="help-search-input">Search . . .</label>
-                                                </div>
-                                          </form>
-                                          <ul class="demo-list-three mdl-list" id="help-search-results">
-
-                                          </ul>
-                                    </div>
-                                    <div class="mdl-dialog__actions">
-                                          <button type="button" class="mdl-button close mdl-js-button mdl-js-ripple-effect">
-                                                <i class="material-icons">cancel_presentation</i> Close
-                                          </button>
-                                    </div>
-                              </dialog>
-
-                              <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-                                    <div class="mdl-snackbar__text"></div>
-                                    <button class="mdl-snackbar__action" type="button"></button>
-                              </div>
                         </div>
-
-
                   </section>
                   <section class="mdl-layout__tab-panel" id="service-tab">
                         <div class="page-content">
@@ -327,6 +170,160 @@
                         </div>
                   </section>
             </main>
+
+            <dialog class="mdl-dialog" id="help-search">
+                  <h4 class="mdl-dialog__title">What do you want to do?</h4>
+                  <div class="mdl-dialog__content">
+                        <form action="#">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="help-search-input">
+                                    <label class="mdl-textfield__label" for="help-search-input">Search . . .</label>
+                              </div>
+                        </form>
+                        <ul class="demo-list-three mdl-list" id="help-search-results">
+
+                        </ul>
+                  </div>
+                  <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button close mdl-js-button mdl-js-ripple-effect">
+                              <i class="material-icons">cancel_presentation</i> Close
+                        </button>
+                  </div>
+            </dialog>
+
+            <!-- Add student dialog box -->
+            <dialog class="mdl-dialog add-student">
+                  <!-- Title -->
+                  <h4 class="mdl-dialog__title">Add Student</h4>
+                  <div class="mdl-dialog__content">
+                        <!-- <p>
+                              Allowing us to collect data will let us get you the information you want faster.
+                        </p> -->
+                        <form action="#">
+                              <!-- Name -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-name" type="text" id="student-name">
+                                    <label class="mdl-textfield__label" for="student-name">Name</label>
+                              </div>
+                              <!-- Number -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-number" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
+                                    <label class="mdl-textfield__label" for="student-number">Student Number</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div>
+                              <!-- Grade -->
+                              <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
+                                    <label class="mdl-textfield__label" for="student-grade">Grade</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div> -->
+
+                              <!-- Grade -->
+                              <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--floating-label">
+                                    <input type="text" value="" class="mdl-textfield__input student-grade" id="student-grade" readonly>
+                                    <input type="hidden" value="" name="student-grade">
+                                    <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                    <label for="student-grade" class="mdl-textfield__label mdl-textfield--floating-label">Grade</label>
+                                    <ul for="student-grade" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="9">9</li>
+                                          <li class="mdl-menu__item" data-val="10">10</li>
+                                          <li class="mdl-menu__item" data-val="11">11</li>
+                                          <li class="mdl-menu__item" data-val="12">12</li>
+                                    </ul>
+                              </div>
+                              <!-- Total hours -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-total_hours" value="0" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
+                                    <label class="mdl-textfield__label" for="student-total_hours">Hours</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div>
+                        </form>
+                  </div>
+
+                  <!-- Action buttons -->
+                  <div class="mdl-dialog__actions">
+                        <!-- Cancel -->
+                        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">
+                              <i class="material-icons">cancel_presentation</i>
+                              Cancel
+                        </button>
+                        <!-- Add student -->
+                        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">
+                              <i class="material-icons">library_add</i>
+                              Add
+                        </button>
+                  </div>
+            </dialog>
+
+            <dialog class="mdl-dialog view-student" id="view-student">
+                  <!-- Title -->
+                  <h4 class="mdl-dialog__title student-name">Student</h4>
+                  <h5 class="mdl-dialog__title">Student Overview</h5>
+                  <div class="mdl-dialog__content">
+                        <form action="#">
+                              <!-- Name -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-name" type="text" id="student-name">
+                                    <label class="mdl-textfield__label" for="student-name">Name</label>
+                              </div>
+                              <!-- Number -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-number" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-number">
+                                    <label class="mdl-textfield__label" for="student-number">Student Number</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div>
+                              <!-- Grade -->
+                              <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
+                                    <label class="mdl-textfield__label" for="student-grade">Grade</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div> -->
+
+                              <!-- Grade -->
+                              <div class="mdl-textfield mdl-js-textfield getmdl-select">
+                                    <input type="text" value="" class="mdl-textfield__input student-grade" id="student-grade2" readonly>
+                                    <input type="hidden" value="" name="student-grade2">
+                                    <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                    <label for="student-grade2" class="mdl-textfield__label">Grade</label>
+                                    <ul for="student-grade2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                          <li class="mdl-menu__item" data-val="9">9</li>
+                                          <li class="mdl-menu__item" data-val="10">10</li>
+                                          <li class="mdl-menu__item" data-val="11">11</li>
+                                          <li class="mdl-menu__item" data-val="12">12</li>
+                                    </ul>
+                              </div>
+                              <!-- Total hours -->
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input student-total_hours" value="0" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-total_hours">
+                                    <label class="mdl-textfield__label" for="student-total_hours">Total Hours</label>
+                                    <span class="mdl-textfield__error">Input must be a number</span>
+                              </div>
+                        </form>
+                  </div>
+                  <!-- Action buttons -->
+                  <div class="mdl-dialog__actions">
+                        <!-- Go to student report -->
+                        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent mdl-button--primary view-report">
+                              <i class="material-icons">view_quilt</i>
+                              View Report
+                        </button>
+                        <!-- Update student information -->
+                        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary confirm">
+                              <i class="material-icons">compare_arrows</i>
+                              Update
+                        </button>
+                        <!-- Close window (dialog) -->
+                        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close">
+                              <i class="material-icons">cancel_presentation</i>
+                              Close
+                        </button>
+                  </div>
+            </dialog>
+
+            <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+            </div>
 
             <!-- Add student button -->
             <button id="add-student" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised">
