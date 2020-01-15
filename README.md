@@ -1,5 +1,7 @@
 # FBLA CSA Service Tracker
 
+![logo](src/icon/icon.png)
+
 My entry for https://www.fbla-pbl.org/competitive-event/coding-programming/
 
 ## Table of Contents
