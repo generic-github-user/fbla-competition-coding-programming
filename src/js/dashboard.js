@@ -10,6 +10,7 @@ function auth_change() {
 
 function log_out() {
       firebase.auth().signOut();
+      window.location.href = './login.html';
 }
 $('button#logout-button').click(log_out);
 
