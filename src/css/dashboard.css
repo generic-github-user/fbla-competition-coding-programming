@@ -61,3 +61,8 @@ div.page-content {
 .csa-category>i {
       margin-right: 10px;
 }
+
+img#icon {
+      width: 50px;
+      margin-right: 20px;
+}
