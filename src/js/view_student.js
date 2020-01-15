@@ -32,7 +32,7 @@ function view_student(student_id) {
                   // Set title of box
                   $('dialog#view-student > *.student-name').text(data.name);
                   // List of properties to load
-                  properties = ['name', 'number', 'grade', 'total_hours'];
+                  properties = ['name', 'number', 'total_hours'];
                   // Cycle through properties
                   for (var i = 0; i < properties.length; i++) {
                         // Get input box element
@@ -44,6 +44,17 @@ function view_student(student_id) {
                   }
                   // $('dialog#view-student input#student-number').val(data.number);
                   // $('dialog#view-student input#student-grade').val(data.grade);
+
+                  var grade;
+                  if (data.grade == '' || !data.grade) {
+                        grade = '9';
+                  } else {
+                        grade = data.grade;
+                  }
+                  console.log(grade)
+                  var query = 'dialog#view-student div.getmdl-select ul li.' + grade;
+                  $(query).attr('data-selected', 'true');
+                  getmdlSelect.init('.getmdl-select');
 
                   view_student_dialog.showModal();
             }
