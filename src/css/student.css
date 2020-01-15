@@ -12,6 +12,11 @@
       margin: 40px 2%;
 }
 
+/* #right-column {
+      float: right;
+      width: 40%;
+      margin: 40px 2%;
+} */
 div#student-info, div#student-actions {
       padding: 20px;
       margin-bottom: 30px;

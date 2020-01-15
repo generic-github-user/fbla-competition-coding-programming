@@ -2,7 +2,7 @@
       justify-content: center;
 }*/
 #login-container {
-      width: 360px;
+      width: 380px;
       padding: 30px;
       box-sizing: border-box;
 }
@@ -26,14 +26,16 @@ a {
 
 h4 {
       margin: 0px;
-      width: 100%;
+      /* width: 100%; */
       display: inline;
+      vertical-align: middle;
 }
 
 img#icon {
       width: 70px;
-      display: inline;
+      display: inline-block;
       float: left;
       margin-right: 20px;
       margin-bottom: 30px;
+      vertical-align: middle;
 }
