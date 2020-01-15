@@ -5,7 +5,7 @@ button, .mdl-layout__tab {
 dialog {
       width: 50% !important;
       max-width: 500px;
-      max-height: 500px;
+      max-height: 600px;
       overflow: scroll;
 }
 

@@ -10,6 +10,10 @@
       <script src="./lib/mdl/material.min.js"></script>
       <link rel="stylesheet" href="./lib/mdl/icon.css">
 
+      <!-- getmdl-select -->
+      <link rel="stylesheet" href="./lib/getmdl-select/getmdl-select.min.css">
+      <script src="./lib/getmdl-select/getmdl-select.min.js"></script>
+
       <!-- Other stylesheets -->
       <link rel="stylesheet" href="./css/dashboard.css">
       <link rel="stylesheet" href="./css/stylesheet.css">
@@ -149,10 +153,24 @@
                                                       <span class="mdl-textfield__error">Input must be a number</span>
                                                 </div>
                                                 <!-- Grade -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
                                                       <label class="mdl-textfield__label" for="student-grade">Grade</label>
                                                       <span class="mdl-textfield__error">Input must be a number</span>
+                                                </div> -->
+
+                                                <!-- Grade -->
+                                                <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--floating-label">
+                                                      <input type="text" value="" class="mdl-textfield__input" id="student-grade2" readonly>
+                                                      <input type="hidden" value="" name="student-grade2">
+                                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                                      <label for="student-grade2" class="mdl-textfield__label mdl-textfield--floating-label">Grade</label>
+                                                      <ul for="student-grade2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                                            <li class="mdl-menu__item" data-val="9">9</li>
+                                                            <li class="mdl-menu__item" data-val="10">10</li>
+                                                            <li class="mdl-menu__item" data-val="11">11</li>
+                                                            <li class="mdl-menu__item" data-val="12">12</li>
+                                                      </ul>
                                                 </div>
                                                 <!-- Total hours -->
                                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -195,10 +213,24 @@
                                                       <span class="mdl-textfield__error">Input must be a number</span>
                                                 </div>
                                                 <!-- Grade -->
-                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                                       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="student-grade">
                                                       <label class="mdl-textfield__label" for="student-grade">Grade</label>
                                                       <span class="mdl-textfield__error">Input must be a number</span>
+                                                </div> -->
+
+                                                <!-- Grade -->
+                                                <div class="mdl-textfield mdl-js-textfield getmdl-select">
+                                                      <input type="text" value="" class="mdl-textfield__input" id="student-grade" readonly>
+                                                      <input type="hidden" value="" name="student-grade">
+                                                      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                                      <label for="student-grade" class="mdl-textfield__label">Grade</label>
+                                                      <ul for="student-grade" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                                            <li class="mdl-menu__item" data-val="9">9</li>
+                                                            <li class="mdl-menu__item" data-val="10">10</li>
+                                                            <li class="mdl-menu__item" data-val="11">11</li>
+                                                            <li class="mdl-menu__item" data-val="12">12</li>
+                                                      </ul>
                                                 </div>
                                                 <!-- Total hours -->
                                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
