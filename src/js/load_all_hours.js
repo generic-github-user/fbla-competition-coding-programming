@@ -3,14 +3,15 @@
 // Fuzzy search options
 var search_options = {
       shouldSort: true,
-      threshold: 0.4,
+      threshold: 0.5,
       location: 0,
       distance: 100,
       maxPatternLength: 32,
       minMatchCharLength: 1,
       // Search hours name and number
       keys: [
-            'description'
+            'description',
+            'student_name'
       ]
 };
 
@@ -115,6 +116,7 @@ function update_service_results(hours_data) {
                         .then(
                               function(student_doc) {
                                     if (student_doc.exists) {
+                                          hours_doc.student_name = student_doc.data().name;
                                           add_row(hours_doc, student_doc.data().name);
                                     } else {
                                           console.log("No such document!");
