@@ -116,7 +116,7 @@ function update_service_results(hours_data) {
                               function(student_doc) {
                                     if (student_doc.exists) {
                                           hours_doc.student_name = student_doc.data().name;
-                                          add_row(hours_doc, student_doc.data().name);
+                                          add_row(hours_doc, hours_doc.student_name);
                                     } else {
                                           console.log("No such document!");
                                     }
@@ -156,7 +156,7 @@ firebase.firestore().collection('hours')
             // Create a new fuse search query from the volunteer event data
             fuse_hours = new Fuse(hours_data, hours_search_options);
             // Update results when search query is updated
-            $('#hours-search').on('input', () => {
+            $('#hours-search').on('change', () => {
                   update_service_results(hours_data);
             });
             // Update on start (once data is loaded; we're still in the .then())

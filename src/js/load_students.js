@@ -31,11 +31,7 @@ function update_results(student_data) {
       else {
             var results = student_data;
       }
-      console.log(search_string)
-      console.log(results)
-
       $('#student-list').empty();
-      console.log(student_data)
 
       // Use Firebase search function OR
       // Create search function inside of callback OR
